@@ -69,7 +69,7 @@ a img,.noline,a.noline:link,a.noline:visited,a.noline:hover,a.thumb,a.icon,a.img
 a.more-link{white-space:nowrap;}
 h1{font-size:4em;line-height:1;font-weight:normal;background-color:#111;color:#fff;margin:0;font-style:italic;padding:0.25em;float:left;  -webkit-transition: background-color .5s ease-in; -moz-transition: background-color .5s ease-in;  -o-transition: background-color .5s ease-in; transition: background-color .5s ease-in;  }
 h1:hover { background-color: #2D5795;  }
-h2{font-size:1.5em;margin:0.5em 0;font-style:italic;}
+h2{font-size:1.4em;margin:0.5em 0;font-style:italic;}
 .vevent h3{font-size:1.5em;margin:0 0 0.5em;}
 .vevent:hover h3{ color: #2D5795; background: #fafafa; -webkit-transition: color .5s ease-in; -moz-transition: color .5s ease-in; -o-transition: color .5s ease-in; transition: color .5s ease-in;}
 h3 abbr{border:none;}
@@ -121,6 +121,45 @@ aside#resig { top: 20px; }
 aside#marshall { top: 368px;  }
 .email i, .email b {font-style:normal; font-weight:normal; font-family: Georgia, serif;}
  
+
+ 
+/* h1,h2,h3,h4 {  font-family: 'Charis SIL Bold Italic'; font-style:normal!important;} */
+h1{
+	   -moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	        border-radius: 2px;
+	     -o-border-radius: 2px;
+}
+
+/* TODO: Move */
+li.subheader { margin-top: 10px; margin-left: -150px; width: 130px; float: left; position:relative; text-align: right; }
+li.subheader:first-child { margin-top: 30px; }
+li.subheader h3 { color: #666; font-weight: 300; font-style: normal;}
+
+ul#links li { list-style-type: none; float:left; margin:0 0 0 1em; }
+
+div.content { float: none; width: 100%;}
+div.content-wrapper { float: none; position: relative; }
+div.content-wrapper { padding-left: 150px; }
+
+section {position:relative;}
+
+#online-at { border: 1px solid #000; display: inline; padding: 0.5em; font-size: 1.3em; }
+#online-at-wrapper {  width: 100%; text-align: center; padding: 10px 0;  }
+
+
+#content div.dates{position:absolute;right:0px;top:0.5em;}
+
+section.education-wrapper {border-top:1px dotted #888; margin-top: 1em; padding-top: 1em;}
+/*section.extracurricular-wrapper h2 {font-size: 1.2em;}*/
+
+/*h1 { background: none; color: #000; font-weight: 400; }*/
+/*h1:hover { background: none;}*/
+.vcard .adr > div { width: 260px; float: right; }
+.vcard .adr .virtual { font-size: 1.0em; margin-top: 2em; }
+.vcard .adr .virtual span.key { font-style: italic; }
+.vcard .adr .virtual span.val { width: 130px; display: inline-block; text-align: left; margin-left: 10px; }
+
 @media print{
   #nav-wrapper{display:none;}
   #wrapper{padding:0;}
@@ -136,6 +175,7 @@ aside#marshall { top: 368px;  }
   div.summary-wrapper { margin: 1em 0;}
   .title-wrapper h1 { padding: 0; }
   #online-at-wrapper {display:block;}
+  .vcard .adr .virtual { margin-top: 1em; }
  /* #nav-wrapper{display:none;}
   div.title-wrapper{float:none;width:100%;}
   div.adr{text-align:left;}
@@ -159,34 +199,12 @@ aside#marshall { top: 368px;  }
 }
 
 @media screen{
- #online-at-wrapper {display:none;}
+ #online-at-wrapper {display:none;} 
+  .vcard .adr .virtual { margin-top: 2em; }
 }
- 
-/* h1,h2,h3,h4 {  font-family: 'Charis SIL Bold Italic'; font-style:normal!important;} */
-h1{
-	   -moz-border-radius: 2px;
-	-webkit-border-radius: 2px;
-	        border-radius: 2px;
-	     -o-border-radius: 2px;
-}
-
-/* TODO: Move */
-li.subheader { margin-top: 10px; margin-left: -150px; width: 130px; float: left; position:relative; text-align: right; }
-li.subheader:first-child { margin-top: 30px; }
-li.subheader h3 { color: #666; font-weight: 300; font-style: normal;}
-
-ul#links li { list-style-type: none; float:left; margin:0 0 0 1em; }
-
-div.content { width: 100%; margin-left: 0px; float: none; }
-div.content ol { margin-left: 150px; }
-
-#online-at { border: 1px solid #000; display: inline; padding: 0.5em; font-size: 1.3em; }
-#online-at-wrapper {  width: 100%; text-align: center; padding: 10px 0;  }
-
-/*.vcard .adr > div { width: 260px; float: right; }*/
-/*.vcard .adr .virtual { font-size: 1.0em; }*/
-/*.vcard .adr .virtual span.val { width: 170px; display: inline-block; text-align: left; }*/
 </style> 
+<!-- <script type="text/javascript" src="http://use.typekit.com/xop3pyh.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script> -->
 </head> 
  
 <!--[if lt IE 7 ]> <body class="ie6 "> <![endif]--> 
@@ -225,27 +243,29 @@ div.content ol { margin-left: 150px; }
   		-->
   			</div> 
   			<div class="virtual"> 
-				<div><span class="key"></span> <span class="val"><span class="locality">Toronto</span>, <span class="region">Ontario</span></span></div>
+			  <!-- <div><span class="key"></span> <span class="val"><span class="locality">Toronto</span>, <span class="region">Ontario</span></span></div> -->
+				<div><span class="key">Site</span> <span class="val"><a class="url" href="http://arwid.ca">arwid.ca</a></span></div> 
+        
   			  <div> 
-  				  <span class="key">Email:</span> <span class="val email"><a href="http://www.google.com/recaptcha/mailhide/d?k=01DpKFdVRELWzne4DZluz3fA==&amp;c=OXFJlwFdN7wg5p7Ir3bZ-w==" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\07501DpKFdVRELWzne4DZluz3fA\75\75\46c\75OXFJlwFdN7wg5p7Ir3bZ-w\75\075', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">a<i>...</i><b></b>d</a>@arwid.ca</span> 
+  				  <span class="key">Email</span> <span class="val email"><a href="http://www.google.com/recaptcha/mailhide/d?k=01DpKFdVRELWzne4DZluz3fA==&amp;c=OXFJlwFdN7wg5p7Ir3bZ-w==" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\07501DpKFdVRELWzne4DZluz3fA\75\75\46c\75OXFJlwFdN7wg5p7Ir3bZ-w\75\075', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">a<i>...</i><b></b>d</a>@arwid.ca</span> 
   				</div> 
-  				<div><span class="key">Site:</span> <span class="val"><a class="url" href="http://arwid.ca">arwid.ca</a></span></div> 
-          
-  				<div><span class="key">Mobile:</span> <span class="val">647.338.4599</span></div>
+  				
+  				<div><span class="key">Mobile</span> <span class="val">647.338.4599</span></div>
 	  		</div>	
 		</div> 
 	</div> 
 	<div class="clear"></div> 
 	
-
+<!--
 	<div class="summary-wrapper"> 
 	  	
 		<p class="summary"> 
-		  <!-- Arwid is an Artist, Graphic Designer, Coder, and recent Computer Engineering Grad. -->
+		  <!-- Arwid is an Artist, Graphic Designer, Coder, and recent Computer Engineering Grad. ->
 		  Arwid is passionate about design, development, and business. He is currently nose deep in the Ruby on Rails community, freelancing, and working on <a href="http://myQuadoo.com">myQuadoo.com</a>.
 		</p> 
 	
 	</div> 
+-->
 	
 	<!--
 	<div class="summary-wrapper"> 
@@ -288,26 +308,28 @@ div.content ol { margin-left: 150px; }
 		<div class="header"> 
 			<h2>Education</h2> 
 		</div> 
+		<div class="content-wrapper"> 
 		<div class="content"> 		
 			<ol class="vcalendar"> 
 				<li class="vevent vcard education"> 
 					<a href="#arwid-bancewicz" class="include" title="Arwid Bancewicz"></a> 
 					<h3 class="title"><abbr title="Bachelor of Applied Science">BASc</abbr>, Computer Engineering</h3>
 					<span class="org highlight">University of Toronto</span> 
-					<div><abbr class="dtstart" title="2005-09-01">Sept 2005</abbr> - <abbr title="2010-11-01">Nov 2010</abbr></div> 
-					<span class="location">Toronto, Ontario</span> 
+					<div class="dates"><abbr class="dtstart" title="2005-09-01">Sept 2005</abbr> - <abbr title="2010-11-01">Nov 2010</abbr></div> 
+					<!--<span class="location">Toronto, Ontario</span>-->
 					<div class="summary"> 
 						<ul> 
 							<li>Honours: Dean’s Honour List 2005-2007, Ranked as high as 4th out of 130 students</li>		
   						<li>Focus: Software, Networks, Business & Entrepreneurship (U of T Entrepreneurial Course Series)</li>
-  						<li>Had one of the top projects in the class of 290 and one of only two projects implementing 3D graphics</li>
-  						<li>Entrepreneurship, Innovation, and Small Business Management Certificate</li>	
+  						<li>Had one of the top ECE243 projects in the class of 290 and one of only two projects implementing 3D graphics</li>
+  						<li>1 of 40 from graduating class with Entrepreneurship, Innovation, and Small Business Management Certificate</li>	
   						<li>Bridge Design Runoff Finalist, 2005</li>			
 						</ul>	
 					</div>	
 				</li>				
 			</ol> 
 		</div>	
+		</div>
 	</section>	
 	
  
@@ -333,6 +355,7 @@ div.content ol { margin-left: 150px; }
 			<h2>Experience</h2> 
 		</div> 
 		
+		<div class="content-wrapper"> 
 		<div class="content"> 
 			<ol class="vcalendar"> 
     	  <li class="subheader"><h3>Company</h3></li>
@@ -340,8 +363,8 @@ div.content ol { margin-left: 150px; }
 					<a href="#arwid-bancewicz" class="include" title="Arwid Bancewicz"></a> 
 					<h3 class="title">Software Developer</h3> 
 					<span class="org highlight">Camilion Solutions</span> 
-					<div><abbr class="dtstart" title="2008-05-01">May 2008</abbr> - <abbr title="2010-08-01">Aug 2009</abbr></div> 
-					<span class="location">Richmond Hill, Ontario</span> 
+					<div class="dates"><abbr class="dtstart" title="2008-05-01">May 2008</abbr> - <abbr title="2010-08-01">Aug 2009</abbr></div> 
+          <!-- <span class="location">Richmond Hill, Ontario</span>  -->
 					<div class="summary"> 
 						<ul> 
               <li>Developed the ground work for a new UI for an existing product; left for a team to configure and build on top.</li> 
@@ -356,8 +379,8 @@ div.content ol { margin-left: 150px; }
     			<a href="#arwid-bancewicz" class="include" title="Arwid Bancewicz"></a> 
     			<h3 class="title">Lead Software Developer</h3> 
     			<span class="org highlight">Vengeo</span>
-    			<div><abbr class="dtstart" title="2008-05-01">May 2005</abbr> - <abbr title="2010-08-01">May 2008</abbr></div> 
-    			<span class="location">Toronto, Ontario</span>
+    			<div class="dates"><abbr class="dtstart" title="2008-05-01">May 2005</abbr> - <abbr title="2010-08-01">May 2008</abbr></div> 
+          <!-- <span class="location">Toronto, Ontario</span> -->
     			<div class="summary"> 
     				<ul> 
               <li>Developed unique features for a C#/.Net desktop application and a JavaScript application. </li> 
@@ -366,6 +389,7 @@ div.content ol { margin-left: 150px; }
     				</ul>	
     			</div>	
     		</li>
+    		
   		  <!--<li class="vevent vcard experience"> 
   				<a href="#arwid-bancewicz" class="include" title="Arwid Bancewicz"></a> 
     			<h3 class="title">Web Developer</h3> 
@@ -385,7 +409,7 @@ div.content ol { margin-left: 150px; }
   				<a href="#arwid-bancewicz" class="include" title="Arwid Bancewicz"></a> 
     			<h3 class="title">Lead Web Developer</h3>
       		<span class="org highlight">Formerly Arwid.ca</span>
-    			<div><abbr class="dtstart" title="2006-06-01">June 2006</abbr> - <abbr title="2011-05-18">Present</abbr></div> 
+    			<div class="dates"><abbr class="dtstart" title="2006-06-01">Jun 2006</abbr> - <abbr title="2011-05-18">Present</abbr></div> 
   				<!--<span class="location"></span>-->
   				<div class="summary"> 
   				  <p>Provide web services particularly for small businesses and business owners to help them establish a strong web presence and corporate identity. Several libraries and plugins have been open sourced.</p>
@@ -394,9 +418,9 @@ div.content ol { margin-left: 150px; }
                 Major Projects 
                 </strong> 
               <ul> 
-              <li><a href="//myQuadoo.com">myQuadoo</a>, 2011 - Currently working on bleeding edge web app with the aim of submitting it into multiple app stores.</li>
-              <li><a href="//newhouseconnect.com">NewhouseConnect</a>, 2011 - Developed website with Ruby on Rails3, PHP5 for RETS connection, HTML5, and CSS3. Worked with Normative Design who wire-framed, designed, and managed the project. Created jQuery plugins, ruby-boilerpoint, and optimized the site for performance.</li>
-              <li><a href="//moso.com">Moso</a>, 2010 - Lead Developer for a startup on a project basis to create their initial developments. Worked with Ruby on Rails, social APIs, jQuery, Sammy, jQuery mobile, and Sencha touch.</li>
+              <li><a href="//myQuadoo.com">myQuadoo</a>, <abbr title="2011-05-09">2011</abbr> - Currently working on bleeding edge web app with the aim of submitting it into multiple app stores.</li>
+              <li><a href="//moso.com">Moso</a>, <abbr title="2010-12-01">Dec 2010</abbr>-<abbr title="2011-02-01">Feb 2011</abbr> - Lead Developer for a startup on a project basis to create their initial developments. Worked with Ruby on Rails, social APIs, jQuery, Sammy, jQuery mobile, and Sencha touch.</li>
+              <li><a href="//newhouseconnect.com">NewhouseConnect</a>, <abbr title="2011-03-01">Mar 2011</abbr> - Developed website with Ruby on Rails3, PHP5 for RETS connection, HTML5, and CSS3. Worked with Normative Design who wire-framed, designed, and managed the project. Created jQuery plugins, ruby-boilerpoint, and optimized the site for performance.</li>
               <li><a href="//livingspanish.ca">Living Spanish</a>, 2010 - Created an online management system for managing clients and staff with built-in invoicing and mass emailing. Improved website, did search engine optimization, and synchronized its online calendar with Google Calendar.</li>
               <li><a href="//livingspanish.ca">Living Spanish</a>, 2005 - Created a stunning website for a small business to give it a web presence and a set corporate identity. Worked closely with client during the entire process for a custom and personalized web-based solution.</li>
               <li><a href="//registerit.ca">RegisterIt</a> - Created, maintained, and debugged websites and large site databases; including Content Management Systems. Researched web technologies to augment product and service offerings to a broader niche of customers. Worked for clients including Perimeter Financial Corp, HD Supply, Ducati Toronto, and Lamborghini Toronto.</li>
@@ -410,9 +434,11 @@ div.content ol { margin-left: 150px; }
   				<a href="#arwid-bancewicz" class="include" title="Arwid Bancewicz"></a> 
     			<h3 class="title">Programming Contest - Placed First</h3> 
       		<span class="org highlight"><abbr title="Ontario Business Educators' Association">OBEA</abbr> Computer Programming Contest 2005</span>
-    			<div><abbr class="dtstart" title="2008-05-01">May 2008</abbr> - <abbr title="2010-08-01">Aug 2009</abbr></div> 
-  				<span class="location">Ontario</span>
+    			<div class="dates"><abbr class="dtstart" title="2008-05-01">May 2008</abbr> - <abbr title="2010-08-01">Aug 2009</abbr></div> 
+          <!-- <span class="location">Ontario</span> -->
+         
   				<div class="summary"> 
+  				  <p>95 source files, 15,000+ lines of code. Available at <a href="//sourceforge.net/projects/aichess">sourceforge.net/projects/aichess</a> and <a href="//github.com/Arwid/chess">github.com/Arwid/chess</a></p>
   					<ul> 
               <li>Created an interactive chess game along with an applet, with AI and networking, under the GNU free software license, utilizing Object Oriented design in the Java programming language.</li>
               <li>Coded consistently for 8 months, in addition to secondary school studies, and prepared technical & user docs.</li>
@@ -426,7 +452,7 @@ div.content ol { margin-left: 150px; }
         					<a href="#arwid-bancewicz" class="include" title="Arwid Bancewicz"></a> 
                   <h3 class="title">Community Involvement</h3> 
         					<!--<span class="org highlight">Molecular, Inc</span> -->
-        					<div><abbr class="dtstart" title="2006-10-01">October 2006</abbr> - <abbr title="2010-04-30">Present</abbr></div>
+        					<div class="dates"><abbr class="dtstart" title="2006-10-01">Oct 2006</abbr> - <abbr title="2010-04-30">Present</abbr></div>
         					<!--<span class="location">Watertown, MA</span>-->
         					<div class="summary"> 
         					  <!--<p>Involvement:</p>-->
@@ -435,8 +461,9 @@ div.content ol { margin-left: 150px; }
                       </strong> 
                     <ul> 
 
-                    <li>Developed several jQuery plugins such as <a href="">jQuery.Page</a>, <a href="">jQuery.scrollIntoView</a>, <a href="">jQuery.ui.sortableFix</a>, <a href="">jQuery.ui.animSortable</a>, <a href="">Backbone.localStorage</a>, and <a href="">ruby-boilerplate</a>.</li>
-                    <li>Developed an Actionscript 3.0 library containing loaders as well as menu, button, and scrollbar controllers.</li>
+                    <li>Developed several jQuery plugins such as <a href="//github.com/Arwid/jQuery.Page">jQuery.Page</a>, <a href="//github.com/Arwid/jQuery.scrollIntoView">jQuery.scrollIntoView</a>, <a href="//github.com/Arwid/jQuery.ui.sortableFix">jQuery.ui.sortableFix</a>, <a href="//github.com/Arwid/jQuery.ui.animSortable">jQuery.ui.animSortable</a>, <a href="//github.com/Arwid/Backbone.localStorage">Backbone.localStorage</a>, and <a href="//github.com/Arwid/ruby-boilerplate">ruby-boilerplate</a>.</li>
+                    <li>Developed an <a href="//github.com/Arwid/aslib">Actionscript 3.0 library</a> containing loaders as well as menu, button, and scrollbar controllers.</li>
+                    <li>Released an <a href="//slideshare.net/arwid/jquery-4470993">introduction to jQuery</a> presentation.</li>
                     
                    </ul>
                    
@@ -454,6 +481,7 @@ div.content ol { margin-left: 150px; }
         				</li>
       	</ol>				
 		</div> 
+    </div>
 	</section> 
 	
 	
@@ -461,17 +489,18 @@ div.content ol { margin-left: 150px; }
  
 	<div class="clear"></div> 
 	
-	<section class="experience-wrapper"> 
+	<section class="coursework-wrapper"> 
 		<div class="header"> 
 			<h2>Coursework</h2> 
 		</div> 
 		
+		<div class="content-wrapper"> 
 		<div class="content"> 
 			<ol class="vcalendar"> 
 			  <li class="vevent vcard experience"> 
 					<a href="#arwid-bancewicz" class="include" title="Arwid Bancewicz"></a> 
 					<!--<h3 class="title">Coursework</h3> -->
-					<span class="org highlight">University of Toronto</span> 
+          <!-- <span class="org highlight">University of Toronto</span>  -->
 					<!--<div><abbr class="dtstart" title="2008-05-01">May 2008</abbr> - <abbr title="2010-08-01">Aug 2009</abbr></div> 
 					<span class="location">Richmond Hill, Ontario</span>-->
 					<div class="summary">
@@ -488,6 +517,7 @@ div.content ol { margin-left: 150px; }
 				</li>
       </ol>				
 		</div> 
+    </div>
 	</section> 
 	
 	
@@ -502,6 +532,7 @@ div.content ol { margin-left: 150px; }
 		<div class="header"> 
 			<h2>Skills</h2> 
 		</div> 
+		<div class="content-wrapper"> 
 		<div class="content"> 
 			<ul class="skills"> 
 				<li class="skill">Ruby on Rails3</li>
@@ -511,36 +542,39 @@ div.content ol { margin-left: 150px; }
   			<li class="skill">ASP, ASP.Net</li>
 				<li class="skill">HTML5, Haml</li> 
 				<li class="skill">CSS3</li> 
-				<li class="skill">SQL</li> 
-				<li class="skill">PHP</li>
 			</ul> 
 			<ul class="skills">	
+			  <li class="skill">C, C++, C#</li>
 			  <li class="skill">Verilog</li>
 			  <li class="skill">BLITZ KPL</li>
   			<li class="skill">ASP, ASP.Net</li>
   			<li class="skill">Dark Basic Pro</li>
-  			<li class="skill">Turing</li>
   			<li class="skill">68k Assembly</li> 
+				<li class="skill">PHP</li>
 			</ul> 
       <ul class="skills">	
+			  <li class="skill">SQL</li>
 				<li class="skill">Git</li> 
 				<li class="skill">TextMate, IntelliJ IDEA, NetBeans, Eclipse</li> 
 				<li class="skill">Photoshop, Illustrator</li>
-				<li class="skill">Maya, 3D Studio Max, LightWave 3D</li> 
+				<li class="skill">Maya, 3D Studio Max, LightWave</li> 
 				<li class="skill">Flash, AfterEffects</li> 
-        <li class="skill"></li> 
 			</ul> 
       
 		
 		</div>	
+    </div>
 	</section>	
 	<div class="clear"></div> 
 	
-	<section class="skills-wrapper"> 
+	<section class="language-wrapper"> 
 		<div class="header"> 
 			<h2>Language Usage</h2> 
 		</div> 
-		<div class="content">
+		<div class="content-wrapper"> 
+		<div class="content">   
+			<p style="margin: 10px 10px;">The following statistics were generated from current local code repositories and based on characters of code:</p>
+    
 			<ul class="skills"> 
 			  <li class="skill">JavaScript (41%)</li>
 				<li class="skill">HTML/HAML/ERB (17%)</li>
@@ -556,9 +590,104 @@ div.content ol { margin-left: 150px; }
 			  <li class="skill">ActionScript (1%)</li>
 			  <li class="skill">PHP (1%)</li>
 			</ul>
-			<div class="clearfix">*Usage statistics based on characters of code and generated from Githu and local code repositories.</div>
-		</div>	
+			<ul>
+			<div class="clear"></div>
+     </div>	
+	  </div>
 	</section>	
+	<div class="clear"></div>
+	
+	<section class="involvement-wrapper"> 
+		<div class="header"> 
+			<h2>University Involvement</h2> 
+		</div> 
+		<div class="content-wrapper"> 
+		<div class="content"> 		
+			<ol class="vcalendar"> 
+				<li class="vevent vcard education"> 
+					<a href="#arwid-bancewicz" class="include" title="Arwid Bancewicz"></a> 
+          <!-- <h3 class="title"><abbr title="Bachelor of Applied Science">BASc</abbr>, Computer Engineering</h3> -->
+          <!-- <span class="org highlight">University of Toronto</span>  -->
+          <!-- <div class="dates"><abbr class="dtstart" title="2005-09-01">Sept 2005</abbr> - <abbr title="2010-11-01">Nov 2010</abbr></div>  -->
+					<!--<span class="location">Toronto, Ontario</span>-->
+					<div class="summary"> 
+						<ul> 
+							<li>Canadian Undergraduate Software Engineering Conference (CUSEC), Attendee</li>
+              <li>Impact National Technology Conference (IMPACT), Attendee</li>
+              <li>Educate, Promote, Inspire, Connect (EPIC), Conference Team Member</li>
+              <li>Canadian Undergraduate Technology Conference (CUTC), U of T Ambassador, Head Delegate</li>
+              <li>Canadian Undergraduate Technology Conference (CUTC), School Delegate</li>
+              <li>Professional Engineers of Ontario (PEO) Student Conference, Conference Webmaster</li>
+              <li>Award Winning Businesses, Waterloo, Selected Attendee</li>
+              <li>IBM Consulting Invitation, Attendee</li>
+              <li>Skule™ Mentorship Program, Mentoree</li>
+              <li>Business Club for Engineers, Member</li>			
+						</ul>	
+					</div>	
+				</li>				
+			</ol> 
+		</div>	
+		</div>
+	</section>
+	<div class="clear"></div>
+	
+	<section class="extracurricular-wrapper"> 
+		<div class="header"> 
+			<h2>Extra-curricular</h2> 
+		</div> 
+		<div class="content-wrapper"> 
+		<div class="content"> 		
+			<ol class="vcalendar"> 
+				<li class="vevent vcard education"> 
+					<a href="#arwid-bancewicz" class="include" title="Arwid Bancewicz"></a> 
+          <!-- <h3 class="title"><abbr title="Bachelor of Applied Science">BASc</abbr>, Computer Engineering</h3> -->
+          <!-- <span class="org highlight">University of Toronto</span>  -->
+          <!-- <div class="dates"><abbr class="dtstart" title="2005-09-01">Sept 2005</abbr> - <abbr title="2010-11-01">Nov 2010</abbr></div>  -->
+					<!--<span class="location">Toronto, Ontario</span>-->
+					<div class="summary"> 
+						<ul> 
+							<li>Intramural Ice Hockey, Engineering Athletics Association (EAA), U of T</li>	
+              <li>GoodLife Fitness member</li>	
+              <li>Ice Hockey, ASHL, PHN</li>	
+              <li>Glider Pilot, York Soaring Association </li>	
+              <li>120 km bike trip to Niagara</li>	
+              <li>Ice Hockey, West Mall Lightning</li>			
+						</ul>	
+					</div>	
+				</li>				
+			</ol> 
+		</div>	
+		</div>
+	</section>
+	<div class="clear"></div>
+	
+	<section class="awards-wrapper"> 
+		<div class="header"> 
+			<h2>Awards</h2> 
+		</div> 
+		<div class="content-wrapper"> 
+		<div class="content"> 		
+			<ol class="vcalendar"> 
+				<li class="vevent vcard education"> 
+					<a href="#arwid-bancewicz" class="include" title="Arwid Bancewicz"></a> 
+          <!-- <h3 class="title"><abbr title="Bachelor of Applied Science">BASc</abbr>, Computer Engineering</h3> -->
+          <!-- <span class="org highlight">University of Toronto</span>  -->
+          <!-- <div class="dates"><abbr class="dtstart" title="2005-09-01">Sept 2005</abbr> - <abbr title="2010-11-01">Nov 2010</abbr></div>  -->
+					<!--<span class="location">Toronto, Ontario</span>-->
+					<div class="summary"> 
+						<ul> 
+							<li>Entrepreneurship, Innovation, and Small Business Management Certificate, University of Toronto</li>		
+              <li>Dean’s Honour List, University of Toronto</li>		
+              <li>Finalist in Bridge Design Runoff, University of Toronto</li>		
+              <li>First place in Computer Programming Contest, OBEA Computer Programming Contest</li>		
+              <li>Computer Science Award, Michael Power St. Joseph</li>			
+						</ul>	
+					</div>	
+				</li>				
+			</ol> 
+		</div>	
+		</div>
+	</section>
 	<div class="clear"></div>
   
 	
@@ -577,11 +706,13 @@ div.content ol { margin-left: 150px; }
   	
 	<footer> 
 		<div class="header"></div> 
+		<div class="content-wrapper"> 
 		<div class="content"> 
 			<p>Arwid Bancewicz &mdash; <span class="email"><a href="http://www.google.com/recaptcha/mailhide/d?k=01DpKFdVRELWzne4DZluz3fA==&amp;c=OXFJlwFdN7wg5p7Ir3bZ-w==" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\07501DpKFdVRELWzne4DZluz3fA\75\75\46c\75OXFJlwFdN7wg5p7Ir3bZ-w\75\075', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">a<i>...</i><b></b>d</a>@arwid.ca</span> 
 		</span> &mdash; 647.338.4599</p> 
 			
 		</div> 
+		</div>
 	</footer> 
 	 
 	<div class="clear"></div>			
