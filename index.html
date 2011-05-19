@@ -17,6 +17,7 @@
 	<meta name="MSSmartTagsPreventParsing" content="true" >	
 	<title>Arwid Bancewicz &#8211; Resumé</title> 
 	<meta name="description" content="Arwid Bancewicz's Resume" > 
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
 <script> 
 /*@cc_on'DetailsCanvasMeterHeaderSummaryAudioFooterHgroupTimeProgressDatalistFigcaptionAbbrFigureArticleNavVideoMarkOutputSectionAsideAbbr'.replace(/.[a-z]+/g,function(n){document.createElement(n)})@*/ // thx remy, kangax, porneL, jdalton
 </script> 
@@ -40,8 +41,9 @@ ul,ol{margin:0 0 15px 15px;}
 ul{list-style-type:disc;}
 ol{list-style-type:decimal;}
 li{margin:3px 0;}
-blockquote:before,blockquote:after,q:before,q:after{content:"";}
+blockquote:before,blockquote:after,q:before,q:after{content:"\"";}
 blockquote,q{quotes:"" "";}
+q {color: #666;}
 blockquote{color:#999;font-style:normal;margin:1em 1em 1em 0;padding-left:1em;border-left:3px solid #eaeaea; -webkit-transition:color 1s ease-in; -moz-transition:color 1s ease-in; -o-transition:color 1s ease-in; transition:color 1s ease-in;}
 blockquote:hover{color:#333; }
 cite{font-weight:normal;font-style:normal;display:block;float:right; color: #666;}
@@ -60,9 +62,9 @@ fieldset{border:none;}
 input,textarea{font-family:inherit;font-size:1em;}
 a{color:#fff;text-decoration:none;background-color:#111;}
 a:hover{color:#111;background-color:#fff;}
-.content a{color:#555;background-color:#fff;padding:0 2px;-webkit-transition:color .25s ease-in; -moz-transition:color .25s ease-in; -o-transition:color .25s ease-in; transition:color .25s ease-in; border-bottom:1px dashed #2D5795;}
+.content a, .summary a {color:#555;background-color:#fff;padding:0 2px;-webkit-transition:color .25s ease-in; -moz-transition:color .25s ease-in; -o-transition:color .25s ease-in; transition:color .25s ease-in; border-bottom:1px dashed #2D5795;}
 .content a:empty{padding:0;}
-.content a:hover{color:#fff;text-decoration:none;background-color:#111;border-bottom:0px;}
+.content a:hover, .summary a:hover {color:#fff;text-decoration:none;background-color:#111;border-bottom:0px;}
 a img,.noline,a.noline:link,a.noline:visited,a.noline:hover,a.thumb,a.icon,a.img:link,a.img:visited,a.img:hover{border-width:0;background:none;}
 a.more-link{white-space:nowrap;}
 h1{font-size:4em;line-height:1;font-weight:normal;background-color:#111;color:#fff;margin:0;font-style:italic;padding:0.25em;float:left;  -webkit-transition: background-color .5s ease-in; -moz-transition: background-color .5s ease-in;  -o-transition: background-color .5s ease-in; transition: background-color .5s ease-in;  }
@@ -72,11 +74,11 @@ h2{font-size:1.5em;margin:0.5em 0;font-style:italic;}
 .vevent:hover h3{ color: #2D5795; background: #fafafa; -webkit-transition: color .5s ease-in; -moz-transition: color .5s ease-in; -o-transition: color .5s ease-in; transition: color .5s ease-in;}
 h3 abbr{border:none;}
 .adr{text-align:right;}
-#nav-wrapper{background-color:#111;color:#eee;padding:10px 0;font-size:1.2em;min-width:800px;width:100%;}
-#nav-wrapper #nav-wrapper-inner{width:800px;margin:0 auto;padding:0 80px;}
+#nav-wrapper{background-color:#111;color:#eee;padding:10px 0;font-size:1.2em;min-width:840px;width:100%;}
+#nav-wrapper #nav-wrapper-inner{width:840px;margin:0 auto;padding:0 80px;}
 #nav-wrapper #nav-wrapper-inner a{background-color:#555;color:#fff;padding:3px 7px;-moz-border-radius:3px;-webkit-border-radius:3px; -o-border-radius: 3px; border-radius:3px;text-shadow:1px 1px 0 #333;-webkit-transition:all .4s ease-in; -moz-transition:all .4s ease-in; -o-transition:all .4s ease-in; transition:all .4s ease-in;}
 #nav-wrapper #nav-wrapper-inner a:hover{background-color:#444;color:#fff;}
-ul#options{list-style:none;margin:0;width:800px;}
+ul#options{list-style:none;margin:0;width:840px;}
 ul#options li{float:right;margin:0 0 0 1em;}
 ul#options li#back{float:left;margin:0 1em 0 0;}
 ul#options li#pdf-resume a{background-color:#6B8E23;}
@@ -89,15 +91,15 @@ ul#options li#linkedin a:hover{background-color:#4169E1;}
 #content div.summary{margin:1em 0 0;}
 #content .objective-wrapper div.summary{margin:0;}
 #content span.location{position:absolute;right:0px;top:0.5em;}
-#wrapper{padding:40px 80px;}
+#wrapper{padding:30px 60px;}
 div.title-wrapper{float:left;width:600px;}
 div.adr{text-align:right;}
 div.summary-wrapper{font-style:italic;border-top:1px dotted #888;border-bottom:1px dotted #888;padding:1em;margin:2em 0;}
 div.objective-wrapper{border-top:1px dotted #888;border-bottom:1px dotted #888;margin:2em 0;padding:1em 0; zoom:1;}
 div.summary-wrapper p{margin:0;}
-div.header{float:left;width:210px; position:relative;}
+div.header{float:left;width:130px; position:relative;}
 div.header h2{margin-top:0;}
-div.content{float:right;width:600px;}
+div.content{float:right;width:720px;}
 div.education-wrapper,
 div.skills-wrapper,
 footer{margin-top:2em;padding-top:2em;border-top:1px solid #ccc;}
@@ -135,7 +137,7 @@ aside#marshall { top: 368px;  }
 	.endorsements .header { display: block;}
 	#content span.location{position:static;}
 	.email i { display: none;}
-  .email b:after { content: 'le';}
+  .email b:after { content: 'rwi';}
 }
  
 /* h1,h2,h3,h4 {  font-family: 'Charis SIL Bold Italic'; font-style:normal!important;} */
@@ -145,6 +147,11 @@ h1{
 	        border-radius: 2px;
 	     -o-border-radius: 2px;
 }
+
+/* TODO: Move */
+li.subheader { margin-top: 10px; margin-left: -150px; width: 130px; float: left; position:relative; text-align: right; }
+li.subheader:first-child { margin-top: 30px; }
+li.subheader h3 { color: #666; font-weight: 300; font-style: normal;}
 </style> 
 </head> 
  
@@ -155,8 +162,8 @@ h1{
 	<header id="nav-wrapper"> 
 		<nav id="nav-wrapper-inner"> 
 			<ul id="options" class="clearfix">		
-			  	<li id="twitter"><a href="http://twitter.com/paul_irish" rel="external">Twitter Profile</a></li> 	
-				<li id="linkedin"><a href="http://www.linkedin.com/in/paulirish" rel="external">LinkedIn Profile</a></li> 
+			  	<li id="twitter"><a href="http://twitter.com/arwidb" rel="external">Twitter Profile</a></li> 	
+				<li id="linkedin"><a href="http://www.linkedin.com/in/arwid" rel="external">LinkedIn Profile</a></li> 
 			</ul> 
 		</nav> 
 	</header> 
@@ -169,7 +176,7 @@ h1{
 		<div class="title-wrapper"> 
 			<h1 class="fn" id="paul-irish"><span class="given-name">Arwid</span> <span class="family-name">Bancewicz</span></h1> 
 			<div class="clear"></div> 
-			<h2 class="title">I make the www fun.</h2> 
+			<!--<h2 class="title">Recent Computer Engineer Grad</h2>-->
 		</div>	
 		<div class="adr"> 
 			<div class="physical"> 
@@ -178,25 +185,82 @@ h1{
   			</div> 
   			<div class="virtual"> 
   				<div> 
-  				  Email: <span class="email"><a href="http://mailhide.recaptcha.net/d?k=017ew5w4bdwdMvxvOb1X_fiA==&amp;c=BtE7tuhyzDqNXM3rbdtJ2KhdrarmDkW6L5-sZTbqd30=" onclick="window.open('http://mailhide.recaptcha.net/d?k=017ew5w4bdwdMvxvOb1X_fiA==&amp;c=BtE7tuhyzDqNXM3rbdtJ2KhdrarmDkW6L5-sZTbqd30=', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">a<i>...</i><b></b>d</a>@arwid.ca</span> 
+  				  
+  				  Email: <span class="email"><a href="http://www.google.com/recaptcha/mailhide/d?k=01DpKFdVRELWzne4DZluz3fA==&amp;c=OXFJlwFdN7wg5p7Ir3bZ-w==" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\07501DpKFdVRELWzne4DZluz3fA\75\75\46c\75OXFJlwFdN7wg5p7Ir3bZ-w\75\075', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">a<i>...</i><b></b>d</a>@arwid.ca</span> 
   				</div> 
-  				<div><span>Site:</span> <a class="url" href="http://paulirish.com">arwid.ca</a></div> 
-  				<div>I am <b>not</b> looking for a job. <tt>:*</tt></div> 
+  				<div><span>Site:</span> <a class="url" href="http://arwid.ca">arwid.ca</a></div> 
+  				<div><span>Mobile:</span> 647.338.4599</div>
 	  		</div>	
 		</div> 
 	</div> 
 	<div class="clear"></div> 
 	
-<!--
+
 	<div class="summary-wrapper"> 
 	  	
 		<p class="summary"> 
-			Paul Irish is passionate about usable design and rich technology push the state of the web forward.  <span class="highlight"></span>.
+		  <!-- Arwid is an Artist, Graphic Designer, Coder, and recent Computer Engineering Grad. -->
+		  Arwid is passionate about design, development, and business. He is currently nose deep in the Ruby on Rails community, freelancing, and working on <a href="http://myQuadoo.com">myQuadoo.com</a>.
 		</p> 
 	
 	</div> 
---> 
+	<!--
+	<section class="highlights-wrapper"> 
+		<div class="s"> 
+			<h2>Highlights</h2> 
+		</div> 
+		<div class="content"> 		
+			<ol class="vcalendar"> 
+				<li class="vevent vcard highlights">
+					<div class="summary"> 
+						<ul> 		
+						  <li>Ranked as high as 4th out of 130 in Computer Engineering.</li>
+  						<li>Worked for startups Vengeo, and Moso.</li>
+  						<li>For a milestone, interviewed for 30 companies in 30 days in 2009.</li>
+  						<li>Received the Entrepreneurship and Small Business certificate.</li>
+  						<li>Was referred to as the EXT JS expert at my time at Camilion Solutions.</li>
+  						<li>Won 1st prize in an Ontario-wide programming contest as a 17 year old for Chess.</li>
+							<li>Interviewed and biographed <a href="">Greg Wolfond</a>, a top 40 under 40 entrepreneur.</li>
+							<li>Regularly attend tech conferences including Impact, CUSEC, Sproutup, Hackerfest.</li>				
+						</ul>	
+					</div>	
+				</li>				
+			</ol> 
+		</div>	
+	</section>	
+ 
+	<div class="clear"></div>
+	-->
 	
+	<section class="education-wrapper"> 
+		<div class="header"> 
+			<h2>Education</h2> 
+		</div> 
+		<div class="content"> 		
+			<ol class="vcalendar"> 
+				<li class="vevent vcard education"> 
+					<a href="#paul-irish" class="include" title="Paul Irish"></a> 
+					<h3 class="title"><abbr title="Bachelor of Applied Science">BASc</abbr>, Computer Engineering</h3>
+					<span class="org highlight">University of Toronto</span> 
+					<div><abbr class="dtstart" title="2005-09-01">Sept 2005</abbr> - <abbr title="2010-11-01">Nov 2010</abbr></div> 
+					<span class="location">Toronto, Ontario</span> 
+					<div class="summary"> 
+						<ul> 
+							<li>Honours: Dean’s Honour List 2005-2007, Ranked as high as 4th out of 130 students</li>		
+  						<li>Focus: Software, Networks, Business & Entrepreneurship (U of T Entrepreneurial Course Series)</li>
+  						<li>Entrepreneurship, Innovation, and Small Business Management Certificate</li>	
+  						<li>Bridge Design Runoff Finalist, 2005</li>			
+						</ul>	
+					</div>	
+				</li>				
+			</ol> 
+		</div>	
+	</section>	
+ 
+	<div class="clear"></div>
+	
+	
+	<!--
 	<div class="objective-wrapper clearfix"> 
 		<div class="header"> 
 			<h2>Objective</h2> 
@@ -207,6 +271,7 @@ h1{
 	</div>	
  
 	<div class="clear"></div> 
+	-->
 	
 	
 	<section class="experience-wrapper"> 
@@ -216,165 +281,125 @@ h1{
 		
 		<div class="content"> 
 			<ol class="vcalendar"> 
+    	  <li class="subheader"><h3>Company</h3></li>
 			  <li class="vevent vcard experience"> 
-					<a href="#paul-irish" class="include" title="Paul Irish"></a> 
-					<h3 class="title">Developer Programs Engineer, Google Chrome</h3> 
-					<span class="org highlight">Google</span>  
-					<!-- <span class="org highlight"></span> --> 
-					<div><abbr class="dtstart" title="2007-07-01">June 2010</abbr> - <abbr title="2010-02-15">Present</abbr></div> 
-					<!-- <span class="location"> </span> --> 
+					<a href="#arwid-bancewicz" class="include" title="Arwid Bancewicz"></a> 
+					<h3 class="title">Software Developer</h3> 
+					<span class="org highlight">Camilion Solutions</span> 
+					<div><abbr class="dtstart" title="2008-05-01">May 2008</abbr> - <abbr title="2010-08-01">Aug 2009</abbr></div> 
+					<span class="location">Richmond Hill, Ontario</span> 
 					<div class="summary"> 
 						<ul> 
-              <li>I teach web developers how to make the web more awesome.</li> 
-            
+              <li>Developed the ground work for a new UI for an existing product; left for a team to configure and build on top.</li> 
+              <li>Became known among colleagues and managers as the <q>EXT JS expert</q> and was the go-to guy for related issues.</li> 
+              <li>Worked in Agile software development (SCRUM) with latest software technologies (J2EE, Spring, Ext JS).</li> 
+              <li>Experienced the life cycles of two product releases (including QA); and worked on a new product prototype.</li> 
+              
 						</ul>	
 					</div>	
 				</li> 
-				<li class="vevent vcard experience"> 
-					<a href="#paul-irish" class="include" title="Paul Irish"></a> 
-					<h3 class="title">jQuery Community</h3> 
-					<!-- <span class="org highlight"></span> --> 
-					<div><abbr class="dtstart" title="2007-07-01">July 2007</abbr> - <abbr title="2010-02-15">Present</abbr></div> 
-					<!-- <span class="location"> </span> --> 
-					<div class="summary"> 
-						<ul> 
-              <li>Joined the <a href="http://jquery.org/team">jQuery Team</a>, in Developer Relations; with the goal of not only outwardly sharing best practices, but also acting as a conduit reflecting the voice of the community back to the core team.</li> 
-              <li>Founder and cohost of a weekly video podcast, <a href="http://yayquery.com">yayQuery</a>, that shares jQuery and front-end development news, techniques and best practices with a good dose of whimsy.</li> 
-						  <li>Administered the jQuery IRC community for over two years, providing extensive 1:1 support, appropriately "staffing" the channel with skilled people, and updating official documentation to provide more clarity to both new and experienced developers.</li> 
-              <li>Created <a href="http://www.google.com/search?q=intitle:hawtness+intitle:irish+site:jquery14.com&hl=en&filter=0">a video series</a> explaining features of the latest release as well as managing and updating all official documentation</li> 
-              <li>Evangelizing best practices for performance through blog posts, yayQuery and talks at The jQuery Conference and The jQuery Summit.</li> 
-              <li>Maintain many community connections to other projects such as: Drupal, MediaWiki, BuddyPress, Mootools</li> 
-						</ul>	
-					</div>	
-				</li> 
-				<li class="vevent vcard experience"> 
-					<a href="#paul-irish" class="include" title="Paul Irish"></a> 
-					<h3 class="title">Open Source Community Involvement</h3> 
-					<!-- <span class="org highlight"></span> --> 
-					<div><abbr class="dtstart" title="2008-01-01">January 2008</abbr> - <abbr title="2010-02-15">Present</abbr></div> 
-					<!-- <span class="location"></span> --> 
-					<div class="summary"> 
-						<ul> 
-              <li>Develop <a href="//html5boilerplate.com">HTML5 Boilerplate</a>, a set of web development templates with the web's best practices baked in. <a href="https://github.com/paulirish/html5-boilerplate/wiki/Sites-using-the-boilerplate">People seem to like it</a>.
-              <li>Develop <a href="http://www.modernizr.com/">Modernizr</a>, a feature detection JavaScript library for HTML5 and CSS3 features. Featured extensively in Mark Pilgrim's <a href="http://diveintohtml5.org/detect.html">Dive Into HTML5</a> and Filament Group's Designing with Progressive Enhancement.</li> 
-              <li>Extensively written, talked and engaged with the community regarding the CSS3 feature @font-face. Spoke at JSConf, The jQuery Conference, Drupal Boston, and Refresh Boston. Worked with Steve Souders briefly on performance-related issues.</li> 
-             <!-- <li>Launching css3please.com</li>
-              <li>Engaging on the chromium bug tracker, working with engineer Yusuke Sato</li>  --> 
-              <li>Launched the <a href="http://typerendering.com/">Type Rendering Project</a>, a collective of folks passionate about making @font-face succeed.</li> 
-              <li>Featured frequently on <a href="http://ajaxian.com">Ajaxian.com</a>. Spoke on HTML5 and progressive enhancement at Standards.Next</li> 
-						</ul>	
-					</div>	
-				</li>					
-				<li class="vevent vcard experience"> 
-					<a href="#paul-irish" class="include" title="Paul Irish"></a> 
-          <h3 class="title">Senior Consultant, Emerging Interactions</h3> 
-					<span class="org highlight">Molecular, Inc</span> 
-					<div><abbr class="dtstart" title="2006-10-01">October 2006</abbr> - <abbr title="2010-04-30">April 2010</abbr></div> 
-					<span class="location">Watertown, MA</span> 
-					<div class="summary"> 
-					  <p>Brought the influence of Web 2.0 into the agency's work and approach, accelerated the adoption of ajax interaction design patterns within the agency, led the front-end development team to a spotlight role within the organization, and successfully evangelized a blog and wiki as core business tools.</p> 
-            <p>Lead a team of ten front-end developers, building proficiency of development and debugging techniques, managing a team of up to 6 simultaneous front-end developers on a project, enforcing coding standards and keeping the group engaged and passionate.</p> 
-            <p>Spearheaded the adoption of jQuery, HTML5 and CSS3 techniques internally, as well as creating and successfully deploying a client-facing performance policy, educating them on the performance tradeoffs of older browser support.</p> 
-            <p>Developed excellent working relationships with our clients and established myself as a trusted advisor with thoughtful leadership as well as a coveted designer and developer.</p> 
-           
-             <strong> 
-              Major Projects
-              </strong> 
-            <ul> 
-            
-            <li>Putnam Investments, Reebok.com, Adidas.com, BoostMobile.com</li> 
-            <li>HumanaOne B2C Webapp, Experience Design Lead and Interaction Engineer - Spec'd the functional and interactive elements, working with stakeholders to ensure product accommodates business goals, and developing the front-end experience within the Microsoft AJAX framework.</li> 
-            <li>Reebok Run Easy, User Experience Lead - Designed IA, interaction design, and wireframes of a Google Maps/Flickr/iTunes/Jumpcut mashup and social running website. Designed and facilitated usability testing with working prototype, developed the presentation layer (XHTML, CSS, and Javascript), coded the first-of-its-kind website-as-map navigation UI, and project-managed the implementation of a video mashup application.</li> 
-            <li>Monster.com, User Experience Specialist - Developed wireframes, planned and facilitated usability testing, created the interaction design and wrote web gracefully-degradable standards-based code for the homepage build kit utilizing best-practices CSS and Javascript. Also managed offsite development team on subsequent work and worked with client on debugging installation into their CMS.</li> 
-           </ul> 
-             
-					</div>	
-				</li> 
-				<li class="vevent vcard experience"> 
-					<a href="#paul-irish" class="include" title="Paul Irish"></a> 
-          <h3 class="title">eInvite Ecommerce Manager</h3> 
-					<span class="org highlight">Checkerboard, Ltd</span> 
-					<div><abbr class="dtstart" title="2004-06-01">June 2004</abbr> - <abbr title="2006-06-01">July 2006</abbr></div> 
-					<span class="location">West Boylston, MA</span> 
-					<div class="summary"> 
-					  <p> 
-					    Directed the user experience improvement campaign that led to a 20% rise in conversion,  23% rise in average order value and 72% rise in attributable revenue.
-            </p> 
-          <!--  <p>
-              Led the customer acquisition campaign that delivered a 50% increase in revenue from affiliate networks and a 35% increase in natural search traffic due to SEO (search engine optimization) efforts.
-            </p> --> 
-            <ul> 
-            <li>Transformed user requirements (from usability sessions and feedback) into wireframes, interaction designs, technical specs and, finally, coordinated Art and IT deliverables.</li> 
-            <li>Led a 4-person team to iteratively improve the onsite user experience. Created a project management system, facilitated biweekly meetings, and developed a release plan to assure QA and stakeholder signoff.</li> 
-            <li>Analyzed the key metrics (e.g. conversion, visit volume, bounce rate) and identified opportunities based on the empirical data—in part, determining our development strategy.</li> 
-            <li>Designed and coded a web-based front-end to design bar mitzvah invitations from a new concept album. Developed UI to drag-and-drop paper layers, load templates, and view a proof instantly.</li> 
-           </ul>	
-					</div>	
-				</li> 
-				
-				<li class="vevent vcard experience"> 
-  					<a href="#paul-irish" class="include" title="Paul Irish"></a> 
-            <h3 class="title">Founder and Lead Curator</h3> 
-  					<span class="org highlight">Aurgasm.us music blog</span> 
-  					<div><abbr class="dtstart" title="2004-08-01">August 2004</abbr> - <abbr title="2010-02-15">Present</abbr></div> 
-  				<!--	<span class="location">West Boylston, MA</span> --> 
-  					<div class="summary"> 
+    		<li class="vevent vcard experience"> 
+    			<a href="#arwid-bancewicz" class="include" title="Arwid Bancewicz"></a> 
+    			<h3 class="title">Lead Software Developer</h3> 
+    			<span class="org highlight">Vengeo</span>
+    			<div><abbr class="dtstart" title="2008-05-01">May 2005</abbr> - <abbr title="2010-08-01">May 2008</abbr></div> 
+    			<span class="location">Toronto, Ontario</span>
+    			<div class="summary"> 
+    				<ul> 
+              <li>Developed unique features for a C#/.Net desktop application and a JavaScript application. </li> 
+              <li>Served lead programming role alongside team lead to rewrite various features of the software.</li> 
+              <li>Gained valuable time management skills in balancing the demands of work and its tight deadlines with school.</li> 
+    				</ul>	
+    			</div>	
+    		</li>
+  		  <!--<li class="vevent vcard experience"> 
+  				<a href="#arwid-bancewicz" class="include" title="Arwid Bancewicz"></a> 
+    			<h3 class="title">Web Developer</h3> 
+      		<span class="org highlight">Register It</span>
+    			<div><abbr class="dtstart" title="2008-05-01">May 2008</abbr> - <abbr title="2010-08-01">Aug 2009</abbr></div> 
+  				<span class="location">Oakville, Ontario</span>
+  				<div class="summary"> 
+  					<ul> 
+              <li>Created, maintained, and debugged websites and large site databases; including Content Management Systems.</li>
+              <li>Researched web technologies to augment product and service offerings to a broader niche of customers.</li>
+              <li>Worked for clients including Perimeter Financial Corp, HD Supply, Ducati Toronto, and Lamborghini Toronto.</li>
+  					</ul>	
+        	</div>	
+      	</li>	-->
+      	<li class="subheader"><h3>Self-Employed</h3></li>
+      	<li class="vevent vcard experience"> 
+  				<a href="#arwid-bancewicz" class="include" title="Arwid Bancewicz"></a> 
+    			<h3 class="title">Lead Web Developer</h3>
+      		<span class="org highlight">Formerly Arwid.ca</span>
+    			<div><abbr class="dtstart" title="2006-06-01">June 2006</abbr> - <abbr title="2011-05-18">Present</abbr></div> 
+  				<!--<span class="location"></span>-->
+  				<div class="summary"> 
+  				  <p>Provide web services particularly for small businesses and business owners to help them establish a strong web presence and corporate identity. Several libraries and plugins have been open sourced.</p>
+  				  
+               <strong> 
+                Major Projects 
+                </strong> 
               <ul> 
-              <li>Founded and developed <a href="http://aurgasm.us">Aurgasm</a> into a highly-influential and trafficked music blog.</li> 
-              <li>Lead a 4-writer team to deliver eclectic music curiously different, yet simply enjoyable to audiences of music mavens, critics, journalists, and bloggers.</li> 
-              <li>Won accolades such as Top 100 blog from PC Magazine&mdash;and beloved by fans including Ze Frank and David Byrne.</li> 
-             </ul>	
-  					</div>	
-  				</li> 
-        
- 
-				<li class="vevent vcard experience"> 
-					<a href="#paul-irish" class="include" title="Paul Irish"></a> 
-					<h3 class="title">Writing Tutor</h3> 
-					<span class="org highlight">WPI Center for Communication Across the Curriculum</span> 
-					<div><abbr class="dtstart" title="2003-08-01">August 2003</abbr> - <abbr title="2004-05-01">May 2004</abbr></div> 
-					<span class="location">Worcester, MA</span> 
-					<div class="summary"> 
-						<ul> 
-							<li>Assisted students with improving the quality of their essays, research papers, projects and pre-writing, focusing on issues such as global organization, thought clarity, and rhetorical structure.</li> 
-							<li>Helped fourteen four-person project teams develop their documents in preparation for an educational experience abroad. Papers were revised to correct issues of flow, audience, and relevance.</li> 		
-						</ul>	
-					</div>	
-				</li>																	
-			</ol>				
+              <li><a href="//myQuadoo.com">myQuadoo</a>, 2011 - Currently working on bleeding edge web app with the aim of submitting it into multiple app stores.</li>
+              <li><a href="//newhouseconnect.com">NewhouseConnect</a>, 2011 - Developed website with Ruby on Rails3, PHP5 for RETS connection, HTML5, and CSS3. Worked with Normative Design who wire-framed, designed, and managed the project. Created jQuery plugins, ruby-boilerpoint, and optimized the site for performance.</li>
+              <li><a href="//moso.com">Moso</a>, 2010 - Lead Developer for a startup on a project basis to create their initial developments. Worked with Ruby on Rails, social APIs, jQuery, Sammy, jQuery mobile, and Sencha touch.</li>
+              <li><a href="//livingspanish.ca">Living Spanish</a>, 2010 - Created an online management system for managing clients and staff with built-in invoicing and mass emailing. Improved website, did search engine optimization, and synchronized its online calendar with Google Calendar.</li>
+              <li><a href="//livingspanish.ca">Living Spanish</a>, 2005 - Created a stunning website for a small business to give it a web presence and a set corporate identity. Worked closely with client during the entire process for a custom and personalized web-based solution.</li>
+              <li><a href="//registerit.ca">RegisterIt</a> - Created, maintained, and debugged websites and large site databases; including Content Management Systems. Researched web technologies to augment product and service offerings to a broader niche of customers. Worked for clients including Perimeter Financial Corp, HD Supply, Ducati Toronto, and Lamborghini Toronto.</li>
+              <li><a href="//ernescliff.ca">Ernescliff College</a>, <abbr class="dtstart" title="2008-05-01">Jun 2007</abbr> - <abbr title="2010-08-01">Jan 2008</abbr> - Created a dynamic database driven flash website for a U of T student residence; including a Content Management System (CMS) for maintaining website content and a Gallery Management System for maintaining photo galleries.</li>
+              
+             </ul>
+        	</div>	
+      	</li>
+      	<li class="subheader"><h3>Competition</h3></li>
+      	<li class="vevent vcard experience"> 
+  				<a href="#arwid-bancewicz" class="include" title="Arwid Bancewicz"></a> 
+    			<h3 class="title">Programming Contest - Placed First</h3> 
+      		<span class="org highlight"><abbr title="Ontario Business Educators' Association">OBEA</abbr> Computer Programming Contest 2005</span>
+    			<div><abbr class="dtstart" title="2008-05-01">May 2008</abbr> - <abbr title="2010-08-01">Aug 2009</abbr></div> 
+  				<span class="location">Ontario</span>
+  				<div class="summary"> 
+  					<ul> 
+              <li>Created an interactive chess game along with an applet, with AI and networking, under the GNU free software license, utilizing Object Oriented design in the Java programming language.</li>
+              <li>Coded consistently for 8 months, in addition to secondary school studies, and prepared technical & user docs.</li>
+              <li>Learned about binary trees, principals behind AI, optimizing AI algorithms, threading, and LAN communication.</li>
+            </ul>	
+        	</div>	
+      	</li>
+      	<li class="subheader"><h3>Community</h3></li>
+      	
+      	<li class="vevent vcard experience"> 
+        					<a href="#paul-irish" class="include" title="Paul Irish"></a> 
+                  <h3 class="title">Community Involvement</h3> 
+        					<!--<span class="org highlight">Molecular, Inc</span> -->
+        					<div><abbr class="dtstart" title="2006-10-01">October 2006</abbr> - <abbr title="2010-04-30">Present</abbr></div>
+        					<!--<span class="location">Watertown, MA</span>-->
+        					<div class="summary"> 
+        					  <!--<p>Involvement:</p>-->
+        					  <strong> 
+                      Open Source
+                      </strong> 
+                    <ul> 
+
+                    <li>Developed several jQuery plugins such as <a href="">jQuery.Page</a>, <a href="">jQuery.scrollIntoView</a>, <a href="">jQuery.ui.sortableFix</a>, <a href="">jQuery.ui.animSortable</a>, <a href="">Backbone.localStorage</a>, and <a href="">ruby-boilerplate</a>.</li>
+                    <li>Developed an Actionscript 3.0 library containing loaders as well as menu, button, and scrollbar controllers.</li>
+                    
+                   </ul>
+                   
+                     <strong> 
+                      Conference
+                      </strong> 
+                    <ul> 
+
+                    <li><a href="//hiepic.com"><abbr title="Educate, Promote, Inspire, Connect">EPIC</a> 2010</span> - Participated during the initial stages of a new technology conference and helped acquire U of T as their largest sponsor.</li>
+                    <li><a href="//cutc.ca"><abbr title="Canadian Undergraduate Technology Conference">CUTC</abbr> 2009</a>, Conference Ambassador for U of T - Was responsible for gaining support from U of T faculties and departments, promoted the conference to the student body, and ultimately bringing in a stronger delegation from U of T than prior years.</li>
+                    <li><a href="//peoconference.skule.ca"><abbr title="Professional Engineers of Ontario">PEO</abbr> Student Conference 2007</a>, Webmaster - Created and maintained a conference website that can easily change in site content and structure. Underwent a highly communicative process with constant change of requirements and content. Created a unique, dynamic, and secure online registration system that successfully processed 60 delegates from 14 different universities, including automated email notifications, and an administrative end.</li>
+                   </ul> 
+
+        					</div>	
+        				</li>
+      	</ol>				
 		</div> 
-		
-		
-		<div class="endorsements"> 
-  	  	<div class="header"> 
-    			<h3>Endorsements</h3> 
-    		</div> 
- 
-  		<aside id="resig" class="endorsement"> 
-  			<blockquote>Paul would be a valuable asset to any team that wishes to better communicate with developers, to help them to understand the intricacies of the modern web and how those developments can best improve their applications.<sup><a href="http://www.linkedin.com/profile?viewProfile=&key=4058666&trk=tab_pro#profile-recommendations">[1]</a></sup></blockquote> 
-  		  	<cite>John Resig, creator of jQuery and Mozilla Evangelist</cite> 
-  		</aside>	
- 
- 
-  		<aside id="mole" class="endorsement"> 
-  		  <blockquote>Paul is admired as one of the smartest, most knowledgeable people at Molecular. He continues to bring expertise to every project that is highly valued by team members and clients.</blockquote> 
-  		  <cite>Steve Mulder, author of <em>Practical Personas</em> and <em>Web Designer's Guide to Style Sheets</em></cite> 
-  		</aside> 
- 
-  		<aside id="wil" class="endorsement"> 
-  		  <blockquote>You, sir, are a national treasure.<sup><a href="http://wilwheaton.typepad.com/wwdnbackup/2009/04/my-god-its-full-of-unicorns.html#comment-6a00d8341c59aa53ef011570582b6a970b">[2]</a></sup></blockquote> 
-  		  <cite>Wil Wheaton</cite> 
-  		</aside> 
- 
-  		<aside id="marshall" class="endorsement"> 
-  		  <blockquote>I have been a fan of Paul Irish's work for years.  He really knows how to add value to the user experience and in an attractive way.</blockquote> 
-  		  <cite>Marshall Kirkpatrick, VP of <a href="http://readwriteweb.com">ReadWriteWeb</a></cite> 
-  		</aside> 
- 
- 
-  	</div> 
-  	
-  		
 	</section> 
 	
 	
@@ -385,72 +410,36 @@ h1{
 	
  
 	
-	<section class="education-wrapper"> 
-		<div class="header"> 
-			<h2>Education</h2> 
-		</div> 
-		<div class="content"> 
-			<ol class="vcalendar"> 
-				<li class="vevent vcard education"> 
-					<a href="#paul-irish" class="include" title="Paul Irish"></a> 
-					<h3 class="title"><abbr title="Bachelor of Science">B.S.</abbr>, Technical, Professional and Scientific Communication</h3> 
-					<span class="org highlight">Worcester Polytechnic Institute</span> 
-					<div><abbr class="dtstart" title="2001-09-01">September 2001</abbr> - <abbr title="2005-05-01">May 2005</abbr></div> 
-					<span class="location">Worcester, MA</span> 
-					<div class="summary"> 
-						<ul> 
-							<li>Graduated with Distinction</li> 
-							<li>Senior thesis: <em>The Significance of Google in The Information Society</em></li> 
-              <li>The National Dean’s List, 2003-2004 School Year</li> 
-              <li>Independent Film Actor: <em>Somnambulist</em>, Spring 2004</li> 
-              <li>Design Competition Finalist: Worcester District Courthouse Network Design, 2004</li> 
-              <li>Produced Playwright: <em>It’s Okay, Tony</em>, New Voices 20 Drama Festival, Spring 2002</li>				
-						</ul>	
-					</div>	
-				</li>				
-			</ol>				
-			<ol class="vcalendar"> 
-				<li class="vevent vcard education"> 
-					<a href="#paul-irish" class="include" title="Paul Irish"></a> 
-					<span class="org highlight">University of Delaware</span> 
-					<div><abbr class="dtstart" title="2000-09-01">September 2000</abbr> - <abbr title="2001-05-01">May 2001</abbr></div> 
-					<span class="location">Newark, DE</span> 
-					<div class="summary"> 
-						<ul> 
-							<li>Mathematics &amp; Computer Science programs</li>						
-						</ul>	
-					</div>	
-				</li>				
-			</ol> 
-		</div>	
-	</section>	
- 
-	<div class="clear"></div> 
-	
 	<section class="skills-wrapper"> 
 		<div class="header"> 
 			<h2>Skills</h2> 
 		</div> 
 		<div class="content"> 
 			<ul class="skills"> 
-				<li class="skill">HTML4, XHTML1, HTML5</li> 
-				<li class="skill">CSS2, CSS3</li> 
+				<li class="skill">Ruby on Rails3</li>
+				<li class="skill">Java, J2EE, JavaCC, Spring</li>
 				<li class="skill">JavaScript</li> 
-				<li class="skill">jQuery, Mootools, Prototype, YUI</li> 
-				<li class="skill">Photoshop, Fireworks</li> 
+				<li class="skill">jQuery, EXT JS, Backbone.js</li> 
+  			<li class="skill">ASP, ASP.Net</li>
+				<li class="skill">HTML5, Haml</li> 
+				<li class="skill">CSS3</li> 
+				<li class="skill">SQL</li> 
+				<li class="skill">PHP</li>
 			</ul> 
 			<ul class="skills">	
-				<li class="skill"><abbr title="Subversion">SVN</abbr></li> 
-				<li class="skill">Git</li> 
-				<li class="skill">TextMate</li> 
-				<li class="skill">Wordpress</li> 
-        <li class="skill">MediaWiki</li> 
+			  <li class="skill">Verilog</li>
+			  <li class="skill">BLITZ KPL</li>
+  			<li class="skill">ASP, ASP.Net</li>
+  			<li class="skill">Dark Basic Pro</li>
+  			<li class="skill">Turing</li>
+  			<li class="skill">68k Assembly</li> 
 			</ul> 
       <ul class="skills">	
-				<li class="skill">Technical Writing</li> 
-				<li class="skill">Screencasting</li> 
-				<li class="skill"></li> 
-				<li class="skill"></li> 
+				<li class="skill">Git</li> 
+				<li class="skill">TextMate, IntelliJ IDEA, NetBeans, Eclipse</li> 
+				<li class="skill">Photoshop, Illustrator</li>
+				<li class="skill">Maya, 3D Studio Max, LightWave 3D</li> 
+				<li class="skill">Flash, AfterEffects</li> 
         <li class="skill"></li> 
 			</ul> 
       
@@ -459,7 +448,33 @@ h1{
 	</section>	
 	<div class="clear"></div> 
 	
+	<section class="skills-wrapper"> 
+		<div class="header"> 
+			<h2>Language Usage</h2> 
+		</div> 
+		<div class="content">
+			<ul class="skills"> 
+			  <li class="skill">JavaScript (41%)</li>
+				<li class="skill">HTML/HAML/ERB (17%)</li>
+				<li class="skill">Java/<abbr title="Java CC">JJ</abbr> (16%)</li>
+			</ul>   
+			<ul class="skills"> 
+				<li class="skill">CSS/<abbr title="Sassy CSS">SCSS</abbr>/<abbr title="Syntactically Awesome Stylesheets">SASS</abbr> (10%)</li>
+				<li class="skill">C# (7%)</li>
+				<li class="skill">Ruby (3%)</li>
+		  </ul>
+		  <ul class="skills"> 
+			  <li class="skill">C/C++ (1%)</li>
+			  <li class="skill">ActionScript (1%)</li>
+			  <li class="skill">PHP (1%)</li>
+			</ul>
+			<div class="clearfix">*Usage statistics based on characters of code and generated from Githu and local code repositories.</div>
+		</div>	
+	</section>	
+	<div class="clear"></div>
+  
 	
+	<!--
 	<section class="interests-wrapper"> 
 		<div class="header"> 
 			<h2>Interests</h2> 
@@ -470,12 +485,13 @@ h1{
 	</section>	
   
   	<div class="clear"></div> 
+  	-->
   	
 	<footer> 
 		<div class="header"></div> 
 		<div class="content"> 
-			<p>Paul Irish &mdash; <span class="email"><span class="email"><a href="http://mailhide.recaptcha.net/d?k=017ew5w4bdwdMvxvOb1X_fiA==&amp;c=BtE7tuhyzDqNXM3rbdtJ2KhdrarmDkW6L5-sZTbqd30=" onclick="window.open('http://mailhide.recaptcha.net/d?k=017ew5w4bdwdMvxvOb1X_fiA==&amp;c=BtE7tuhyzDqNXM3rbdtJ2KhdrarmDkW6L5-sZTbqd30=', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">hol<i>...</i><b></b>r</a>@paulirish.com</span> 
-		</span> &mdash; 617.335.1790</p> 
+			<p>Arwid Bancewicz &mdash; <span class="email"><a href="http://www.google.com/recaptcha/mailhide/d?k=01DpKFdVRELWzne4DZluz3fA==&amp;c=OXFJlwFdN7wg5p7Ir3bZ-w==" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\07501DpKFdVRELWzne4DZluz3fA\75\75\46c\75OXFJlwFdN7wg5p7Ir3bZ-w\75\075', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">a<i>...</i><b></b>d</a>@arwid.ca</span> 
+		</span> &mdash; 647.338.4599</p> 
 			
 		</div> 
 	</footer> 
