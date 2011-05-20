@@ -174,8 +174,8 @@
           @media screen{#online-at-wrapper{display:none;}
           .vcard .adr .virtual{margin-top:3em;}
           }
-          /*!flourish */ .flourishes,.sect-separator{height:16px;margin:1em 0;background:transparent url("images/line.png") no-repeat center -61px;border:0;outline:0;opacity:.2;filter:alpha(opacity=20);text-indent:-9000px;}
-          .flourishes,.sect-separator{opacity:.2;}
+          /*!separator */ .seperator{height:16px;margin:1em 0;background:transparent url("images/line.png") no-repeat center -61px;border:0;outline:0;opacity:.2;filter:alpha(opacity=20);text-indent:-9000px;}
+          .seperator{opacity:.2;}
           .title-wrapper h2{font-size:1.3em;}
           footer{border:none;margin:0;padding:0;}
           /*!shadding */ @media screen{#wrapper{background:white;-webkit-box-shadow:0 0 0 4px rgba(0,0,0,0.03) inset,0 0 0 1px rgba(0,0,0,0.15);-moz-box-shadow:0 0 0 4px rgba(0,0,0,0.03) inset,0 0 0 1px rgba(0,0,0,0.15);box-shadow:0 0 0 4px rgba(0,0,0,0.03) inset,0 0 0 1px rgba(0,0,0,0.15);position:relative;z-index:3;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;}
@@ -204,14 +204,17 @@
           .bars{display:none;}
           div.summary-wrapper{display:none;}
           section.education-wrapper{border-top:1px solid #888;margin-top:.5em;padding-top:.5em;}
-          .sect-separator{display:none;}
+          .seperator{display:none;}
           footer{border-top:1px solid #888;padding-top:.5em;margin-top:.5em;}
           abbr,a{border:none;}
+          .wrapper-shadow{display:none}
           @page :first{margin:.5in;margin-bottom:.3in;}
           }
           ul#options li a{display:block;}
           ul#options li#home{float:left;display:none;}
           ul#options li#home a{background-image:url(images/home.png);background-repeat:no-repeat;width:30px;}
+          .title-wrapper h1{position:relative;}
+          .title-wrapper .wrapper-shadow{}
         </style>
         <!-- <script type="text/javascript" src="http://use.typekit.com/xop3pyh.js"></script>
         <script type="text/javascript">try{Typekit.load();}catch(e){}</script> -->
@@ -245,7 +248,7 @@
             <div class="hresume">
                 <div class="vcard">
                     <div class="title-wrapper">
-                        <h1 class="fn" id="arwid-bancewicz"><span class="given-name">Arwid</span> <span class="family-name">Bancewicz</span></h1>
+                        <h1 class="fn" id="arwid-bancewicz"><span class="given-name">Arwid</span> <span class="family-name">Bancewicz</span><div class="wrapper-shadow l"></div><div class="wrapper-shadow r"></div></h1>
                         <div class="clear"></div>
                         <h2 class="title">The web is our playground, the world our oyster.</h2>
                     </div>
@@ -267,13 +270,13 @@
 
                 <div class="summary-wrapper">
                     <p class="summary">
-                        Arwid lives at the delta of design, development, and business which are undeniably the three major themes in his life, and in that order. He wishes to be at the forefront of web technologies where he can push the envelope of innovation and create greater value to society. Currently, he can be found in the Ruby on Rails community in his home town Toronto, and working on a pet project <a href="http://myQuadoo.com">myQuadoo.com</a> which he hopes will revolutionize a niche market and maybe even add a new word into the dictionary.
+                        Arwid lives at the delta of design, development, and business which are undeniably the three major themes in his life, and in that order. He wishes to be at the forefront of web technologies where he can push the envelope of innovation and create greater value to society. Currently, he can be found among the Ruby on Rails community in his home town Toronto, and working on a pet project <a href="http://myQuadoo.com">myQuadoo.com</a> which he hopes will revolutionize a niche market and maybe even add a new word into the dictionary.
                         <br><br>He hopes to one day be known as an Artist, Designer, Developer, and Leader, and wishes for young people to stop referring to themselves as Entrepreneurs and Founders, but Creators.
                         Being a Canadian with a love for hockey, he enjoys looking at vertical markets as hockey leagues and loves comparing companies to hockey teams. Rightly so, he is currently looking at getting drafted and would one day love to captain his own team.
                     </p>
                 </div>
                 
-                <hr class="sect-separator">
+                <hr class="seperator">
                 <section class="education-wrapper">
                     <div class="header">
                         <h2>Education</h2>
@@ -291,8 +294,8 @@
                                         <ul>
                                             <li>Honours: Dean’s Honour List 2005-2007, Ranked as high as 4th out of 130 students</li>
                                             <li>Focus: Software, Networks, Business & Entrepreneurship (U of T Entrepreneurial Course Series)</li>
-                                            <li>Had one of the top ECE243 projects in the class of 290 and one of only two projects implementing 3D graphics</li>
-                                            <li>Received the Entrepreneurship, Innovation, and Small Business Management Certificate</li>
+                                            <li>Had one of the top ECE243 projects in the class of 290 and one of only two projects implementing 3D graphics.</li>
+                                            <li>Received the Entrepreneurship, Innovation, and Small Business Management Certificate.</li>
                                             <li>Bridge Design Runoff Finalist, 2005</li>
                                         </ul>
                                     </div>
@@ -326,7 +329,7 @@
                                     <a href="#arwid-bancewicz" class="include" title="Arwid Bancewicz"></a>
                                     <h3 class="title">Software Developer</h3>
                                     <span class="org highlight">Camilion Solutions</span>
-                                    <div class="dates"><abbr class="dtstart" title="2008-05-01">May 2008</abbr> - <abbr title="2010-08-01">Aug 2009</abbr></div>
+                                    <div class="dates"><abbr class="dtstart" title="2008-05-01">May 2008</abbr> - <abbr title="2009-08-01">Aug 2009</abbr></div>
                                     <!-- <span class="location">Richmond Hill, Ontario</span>  -->
                                     <div class="summary">
                                         <ul>
@@ -341,7 +344,7 @@
                                     <a href="#arwid-bancewicz" class="include" title="Arwid Bancewicz"></a>
                                     <h3 class="title">Lead Software Developer</h3>
                                     <span class="org highlight">Vengeo</span>
-                                    <div class="dates"><abbr class="dtstart" title="2008-05-01">May 2005</abbr> - <abbr title="2010-08-01">May 2008</abbr></div>
+                                    <div class="dates"><abbr class="dtstart" title="2005-05-01">May 2005</abbr> - <abbr title="2008-05-01">May 2008</abbr></div>
                                     <!-- <span class="location">Toronto, Ontario</span> -->
                                     <div class="summary">
                                         <ul>
@@ -357,22 +360,23 @@
                                     <a href="#arwid-bancewicz" class="include" title="Arwid Bancewicz"></a>
                                     <h3 class="title">Lead Web Developer</h3>
                                     <span class="org highlight">Formerly Arwid.ca</span>
-                                    <div class="dates"><abbr class="dtstart" title="2006-06-01">Jun 2006</abbr> - <abbr title="2011-05-18">Present</abbr></div>
+                                    <div class="dates"><abbr class="dtstart" title="2006-06-01">Jun 2006</abbr> - <abbr title="2011-05-20">Present</abbr></div>
                                     <!--<span class="location"></span>-->
                                     <div class="summary">
-                                        <p>Provide web services particularly for small businesses and business owners to help them establish a strong web presence and corporate identity. Several libraries and plugins have been open sourced.</p>
+                                        <p>Initially started in the summer after 1st year of university with the itch to apply classroom theories into the real world. Focused on providing web services particularly for small businesses and business owners to help them establish a strong web presence and corporate identity. Although most work was directly for clients, there was some contractual work to get to several house hold names including Lamborghini Toronto and Perimeter Financial Corp.</p>
+                                        <p>Most recently, there was some joint work with a design firm and as a lead developer for a local startup on a project basis to create their first prototypes.</p>
 
                                         <strong>
                                             Major Projects
                                         </strong>
                                         <ul>
-                                            <li><a href="//myQuadoo.com">myQuadoo</a>, <abbr title="2011-05-09">2011</abbr> - Currently working on bleeding edge web app with the aim of submitting it into multiple app stores.</li>
+                                            <li><a href="//myQuadoo.com">myQuadoo</a>, <abbr title="2011-05-20">2011</abbr> - Currently working on bleeding edge web app with the aim of submitting it into multiple app stores.</li>
                                             <li><a href="//moso.com">Moso</a>, <abbr title="2010-12-01">Dec 2010</abbr>-<abbr title="2011-02-01">Feb 2011</abbr> - Lead Developer for a startup on a project basis to create their initial developments. Worked with Ruby on Rails, social APIs, jQuery, Sammy, jQuery mobile, and Sencha touch.</li>
                                             <li><a href="//newhouseconnect.com">NewhouseConnect</a>, <abbr title="2011-03-01">Mar 2011</abbr> - Developed website with Ruby on Rails3, PHP5 for RETS connection, HTML5, and CSS3. Worked with Normative Design who wire-framed, designed, and managed the project. Created jQuery plugins, ruby-boilerpoint, and optimized the site for performance.</li>
-                                            <li><a href="//livingspanish.ca">Living Spanish</a>, 2010 - Created an online management system for managing clients and staff with built-in invoicing and mass emailing. Improved website, did search engine optimization, and synchronized its online calendar with Google Calendar.</li>
-                                            <li><a href="//livingspanish.ca">Living Spanish</a>, 2005 - Created a stunning website for a small business to give it a web presence and a set corporate identity. Worked closely with client during the entire process for a custom and personalized web-based solution.</li>
-                                            <li><a href="//registerit.ca">RegisterIt</a> - Created, maintained, and debugged websites and large site databases; including Content Management Systems. Researched web technologies to augment product and service offerings to a broader niche of customers. Worked for clients including Perimeter Financial Corp, HD Supply, Ducati Toronto, and Lamborghini Toronto.</li>
-                                            <li><a href="//ernescliff.ca">Ernescliff College</a>, <abbr class="dtstart" title="2008-05-01">Jun 2007</abbr> - <abbr title="2010-08-01">Jan 2008</abbr> - Created a dynamic database driven flash website for a U of T student residence; including a Content Management System (CMS) for maintaining website content and a Gallery Management System for maintaining photo galleries.</li>
+                                            <li>Ernescliff College, <abbr class="dtstart" title="2008-01-01">2008</abbr> - Created a dynamic database driven flash website for a U of T student residence; including a Content Management System (CMS) for maintaining website content and a Gallery Management System for maintaining photo galleries.</li>
+                                            <li><a href="//livingspanish.ca">Living Spanish</a>, <abbr title="2007-01-01">2007</abbr> - Created a copycat of <a href="//freshbooks.com">freshbooks.com</a>, an online management system for managing clients and staff with built-in invoicing and mass emailing. Improved website, did search engine optimization, and synchronized its online calendar with Google Calendar.</li>
+                                            <li><a href="//registerit.ca">RegisterIt</a>, <abbr title="2007-05-01">May 2007</abbr>-<abbr title="2007-08-01">Aug 2007</abbr> - Created, maintained, and debugged websites and large site databases; including Content Management Systems. Researched web technologies to augment product and service offerings to a broader niche of customers. Worked for clients including Perimeter Financial Corp, HD Supply, Ducati Toronto, and Lamborghini Toronto.</li>
+                                            <li><a href="//livingspanish.ca">Living Spanish</a>, <abbr title="2005-01-01">2005</abbr> - Created a stunning website for a small business to give it a web presence and a set corporate identity. Worked closely with client during the entire process for a custom and personalized web-based solution.</li>
 
                                         </ul>
                                     </div>
@@ -383,7 +387,7 @@
                                     <a href="#arwid-bancewicz" class="include" title="Arwid Bancewicz"></a>
                                     <h3 class="title">Programming Contest - Placed First</h3>
                                     <span class="org highlight"><abbr title="Ontario Business Educators' Association">OBEA</abbr> Computer Programming Contest 2005</span>
-                                    <div class="dates"><abbr class="dtstart" title="2008-05-01">May 2008</abbr> - <abbr title="2010-08-01">Aug 2009</abbr></div>
+                                    <div class="dates"><abbr class="dtstart" title="2004-10-01">Oct 2004</abbr> - <abbr title="2005-04-01">Apr 2005</abbr></div>
                                     <!-- <span class="location">Ontario</span> -->
                                     <div class="summary">
                                         <p>95 source files, 15,000+ lines of code. Available at <a href="//sourceforge.net/projects/aichess">sourceforge.net/projects/aichess</a> and <a href="//github.com/Arwid/chess">github.com/Arwid/chess</a></p>
@@ -391,6 +395,7 @@
                                             <li>Created an interactive chess game along with an applet, with AI and networking, under the GNU free software license, utilizing Object Oriented design in the Java programming language.</li>
                                             <li>Coded consistently for 8 months, in addition to secondary school studies, and prepared technical & user docs.</li>
                                             <li>Learned about binary trees, principals behind AI, optimizing AI algorithms, threading, and LAN communication.</li>
+                                            <li>Received 400+ downloads since deciding to release it in late 2010. Also got picked up by Softpedia at <a href="//mac.softpedia.com/get/Games/Arvydas-Chess.shtml">mac.softpedia.com/get/Games/Arvydas-Chess.shtml.</a></li>
                                         </ul>
                                     </div>
                                 </li>
@@ -408,17 +413,17 @@
                                             Open Source
                                         </strong>
                                         <ul>
-                                            <li>Developed several jQuery plugins such as <a href="//github.com/Arwid/jQuery.Page">jQuery.Page</a>, <a href="//github.com/Arwid/jQuery.scrollIntoView">jQuery.scrollIntoView</a>, <a href="//github.com/Arwid/jQuery.ui.sortableFix">jQuery.ui.sortableFix</a>, <a href="//github.com/Arwid/jQuery.ui.animSortable">jQuery.ui.animSortable</a>, <a href="//github.com/Arwid/Backbone.localStorage">Backbone.localStorage</a>, and <a href="//github.com/Arwid/ruby-boilerplate">ruby-boilerplate</a>.</li>
+                                            <li>Developed several jQuery/Ruby plugins such as <a href="//github.com/Arwid/jQuery.Page">jQuery.Page</a>, <a href="//github.com/Arwid/jQuery.scrollIntoView">jQuery.scrollIntoView</a>, <a href="//github.com/Arwid/jQuery.ui.sortableFix">jQuery.ui.sortableFix</a>, <a href="//github.com/Arwid/jQuery.ui.animSortable">jQuery.ui.animSortable</a>,<a href="//github.com/Arwid/ruby-boilerplate">ruby-boilerplate</a>, and contributed to <a href="//github.com/Arwid/Backbone.localStorage">Backbone.localStorage</a>.</li>
                                             <li>Developed an <a href="//github.com/Arwid/aslib">Actionscript 3.0 library</a> containing loaders as well as menu, button, and scrollbar controllers.</li>
-                                            <li>Released an <a href="//slideshare.net/arwid/jquery-4470993">introduction to jQuery</a> presentation.</li>
+                                            <li>Released an <a href="//slideshare.net/arwid/jquery-4470993">introduction to jQuery</a> presentation. <abbr title="2010-05-02">May 2010</abbr></li>
                                         </ul>
                                         <strong>
                                             Conference
                                         </strong>
                                         <ul>
                                             <li><a href="//hiepic.com"><abbr title="Educate, Promote, Inspire, Connect">EPIC</a> 2010</span> - Participated during the initial stages of a new technology conference and helped acquire U of T as their largest sponsor.</li>
-                                            <li><a href="//cutc.ca"><abbr title="Canadian Undergraduate Technology Conference">CUTC</abbr> 2009</a>, Conference Ambassador for U of T - Was responsible for gaining support from U of T faculties and departments, promoted the conference to the student body, and ultimately bringing in a stronger delegation from U of T than prior years.</li>
-                                            <li><a href="//peoconference.skule.ca"><abbr title="Professional Engineers of Ontario">PEO</abbr> Student Conference 2007</a>, Webmaster - Created and maintained a conference website that can easily change in site content and structure. Underwent a highly communicative process with constant change of requirements and content. Created a unique, dynamic, and secure online registration system that successfully processed 60 delegates from 14 different universities, including automated email notifications, and an administrative end.</li>
+                                            <li><a href="//cutc.ca"><abbr title="Canadian Undergraduate Technology Conference">CUTC</abbr></a> 2009, Conference Ambassador for U of T - Was responsible for gaining support from U of T faculties and departments, promoted the conference to the student body, and ultimately bringing in a stronger delegation from U of T than prior years.</li>
+                                            <li><a href="//peoconference.skule.ca"><abbr title="Professional Engineers of Ontario">PEO</abbr> Student Conference</a> 2007, Webmaster - Created and maintained a conference website that can easily change in site content and structure. Underwent a highly communicative process with constant change of requirements and content. Created a unique, dynamic, and secure online registration system that successfully processed 60 delegates from 14 different universities, including automated email notifications, and an administrative end.</li>
                                         </ul>
                                     </div>
                                 </li>
@@ -637,14 +642,14 @@
                 </section>
                 <div class="clear"></div>
                 -->
-                <hr class="flourishes flourish-01">
+                <hr class="sect-separator">
 
                 <footer>
                     <div class="header"></div>
                     <div class="content-wrapper">
                         <div class="content">
                             <p>Arwid Bancewicz &mdash; <span class="email"><a href="http://www.google.com/recaptcha/mailhide/d?k=01DpKFdVRELWzne4DZluz3fA==&amp;c=OXFJlwFdN7wg5p7Ir3bZ-w==" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\07501DpKFdVRELWzne4DZluz3fA\75\75\46c\75OXFJlwFdN7wg5p7Ir3bZ-w\75\075', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">a<i>...</i><b></b>d</a>@arwid.ca</span>
-                                </span> &mdash; +!.647.338.4599</p>
+                                </span> &mdash; +1.647.338.4599</p>
                         </div>
                     </div>
                 </footer>
