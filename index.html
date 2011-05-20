@@ -5,6 +5,8 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" > 
 	
 	<!--
+  	  This was initially a fork of Paul Irish's resume.
+  	    - arwid bancewicz. march 2011
                 __
                / _)     Welcome to the source!      
         .-^^^-/ /       This is a single-file resumé with no extra HTTP connections (beyond analytics).
@@ -150,16 +152,77 @@ section {position:relative;}
 
 #content div.dates{position:absolute;right:0px;top:0.5em;}
 
-section.education-wrapper {border-top:1px dotted #888; margin-top: 1em; padding-top: 1em;}
+/*section.education-wrapper {border-top:1px dotted #888; margin-top: 1em; padding-top: 1em;}*/
 /*section.extracurricular-wrapper h2 {font-size: 1.2em;}*/
 
-/*h1 { background: none; color: #000; font-weight: 400; }*/
+/*h1 { background: none; color: #000; font-weight: 400; font-size: 5em; }*/
 /*h1:hover { background: none;}*/
+/*h1 { background: none; color: #000;}*/
 .vcard .adr > div { width: 260px; float: right; }
 .vcard .adr .virtual { font-size: 1.0em; margin-top: 2em; }
 .vcard .adr .virtual span.key { font-style: italic; }
 .vcard .adr .virtual span.val { width: 130px; display: inline-block; text-align: left; margin-left: 10px; }
 
+
+section.language-wrapper ul.skills { display: none; }
+
+.summary-wrapper .summary {font-style:normal;padding-left:1em;border-left:3px solid #eaeaea; -webkit-transition:color 1s ease-in; -moz-transition:color 1s ease-in; -o-transition:color 1s ease-in; transition:color 1s ease-in;}
+.summary-wrapper .summary:hover{color:#333; }
+.summary-wrapper .summary {border:none; padding:0; margin: 0;}
+div.summary-wrapper { border-top:3px solid #eaeaea; border-bottom:3px solid #eaeaea; border: none; margin:0; padding: 0;}
+div.summary-wrapper { border-top:none; padding-top: 1em; margin-top: 0.5em;}
+/*border:none;*/
+
+
+
+/* bars */
+.bar {
+clear: left;
+}
+.bar div.label {
+padding: 8px 16px 16px 0;
+width: 120px;
+float: left;
+font-style: italic;
+text-align: right;
+}
+.bar1, .bar2, .bar3, .bar4, .bar5, .bar6, .bar7, .bar8, .bar9 {
+float: left;
+padding: 16px 0 16px 8px;
+opacity: 0.8;
+filter: alpha(opacity=80);
+margin: -8px 0 0 0;
+}
+
+.bar1, .bar6 {
+padding: 16px 0 16px 8px;
+background-color: #E61010;
+}
+.bar2, .bar7 {
+background-color: #F6AC43;
+}
+.bar3, .bar8 {
+background-color: #FEF34B;
+}
+.bar4, .bar9 {
+background-color: #C6E628;
+}
+.bar5 {
+background-color: #06C;
+}
+.bar div.value {
+float: left;
+background-color: black;
+color: white;
+padding: 2px 4px;
+margin-top: 8px;
+}
+
+.bars {
+padding: 5px 5px 15px 5px; overflow: auto
+}
+
+div.summary-wrapper{margin-top: 0.5em;}
 @media print{
   #nav-wrapper{display:none;}
   #wrapper{padding:0;}
@@ -174,8 +237,14 @@ section.education-wrapper {border-top:1px dotted #888; margin-top: 1em; padding-
   div.content ol li { page-break-before: auto; }
   div.summary-wrapper { margin: 1em 0;}
   .title-wrapper h1 { padding: 0; }
+  .title-wrapper .title { display: none;}
   #online-at-wrapper {display:block;}
   .vcard .adr .virtual { margin-top: 1em; }
+  section.language-wrapper ul.skills { display: block; }
+  .bars { display: none; }
+  div.summary-wrapper {display:none;}
+  section.education-wrapper{border-top:1px solid #888888; margin-top: 0.5em; padding-top: 0.5em;}
+  .sect-separator {display:none;}
  /* #nav-wrapper{display:none;}
   div.title-wrapper{float:none;width:100%;}
   div.adr{text-align:left;}
@@ -200,8 +269,75 @@ section.education-wrapper {border-top:1px dotted #888; margin-top: 1em; padding-
 
 @media screen{
  #online-at-wrapper {display:none;} 
-  .vcard .adr .virtual { margin-top: 2em; }
+  .vcard .adr .virtual { margin-top: 3em; }
 }
+
+/*.given-name, .family-name { display: none; }*/
+/*.art { font-size: 9px; font-family: Courier;}*/
+
+
+/* flourish */
+.flourishes, .sect-separator {
+height: 16px;
+margin: 1em 0;
+background: transparent url("images/flourishes.png") no-repeat center -61px;
+border: 0;
+outline: 0;
+opacity: .2;
+filter: alpha(opacity=20);
+text-indent: -9000px;
+}
+.flourishes, .sect-separator {
+/*  border-top:2px solid #ccc;*/
+  opacity: 0.2;
+}
+.title-wrapper h2 {
+  font-size: 1.3em;
+}
+footer {border:none; margin: 0; padding: 0;}
+
+/*#wrapper,.content a, .summary a, a:hover {background-color: #FBFBF9;}
+h1, .bar div.value {color: #FBFBF9;}
+.vevent:hover h3{ background-color: #f7f7f4;}*/
+
+/* shadding */
+#wrapper {background: white;
+-webkit-box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.03) inset, 0 0 0 1px rgba(0, 0, 0, 0.15);
+-moz-box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.03) inset, 0 0 0 1px rgba(0, 0, 0, 0.15);
+box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.03) inset, 0 0 0 1px rgba(0, 0, 0, 0.15);
+position: relative;
+z-index: 3;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+}
+body {background:#E6EBEA;/*#FBFBF9;*/}
+
+.wrapper-shadow {
+  background: url(http://static.tumblr.com/njty47g/yu0leufgq/post_shadow.png) left bottom no-repeat;
+  width: 50%;
+  height: 10px;
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  z-index: 2;
+}
+.wrapper-shadow.r {
+  left: auto;
+  right: 0;
+  background-position: right bottom;
+}
+header {
+  background: #111;
+  background: -webkit-gradient(linear,left top,left bottom,from(#333),to(#111));
+  background: -moz-linear-gradient(top,#333,#111);
+  background: transparent	9;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+/*header {display:none;}*/
 </style> 
 <!-- <script type="text/javascript" src="http://use.typekit.com/xop3pyh.js"></script>
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script> -->
@@ -232,9 +368,21 @@ section.education-wrapper {border-top:1px dotted #888; margin-top: 1em; padding-
 	<div class="hresume"> 
 	<div class="vcard"> 
 		<div class="title-wrapper"> 
-			<h1 class="fn" id="arwid-bancewicz"><span class="given-name">Arwid</span> <span class="family-name">Bancewicz</span></h1> 
+			<h1 class="fn" id="arwid-bancewicz"><span class="given-name">Arwid</span> <span class="family-name">Bancewicz</span>
+			  
+			  <!-- <div class="art">
+			                A)aa                      ##      d)    B)bbbb                                              ##                 
+			           <br>  A)  aa                             d)    B)   bb                                                                
+			           <br>  A)    aa  r)RRR  w)      WW i)  d)DDDD    B)bbbb   a)AAAA  n)NNNN   c)CCCC e)EEEEE w)      WW i)  c)CCCC z)ZZZZZ 
+			           <br>  A)aaaaaa r)   RR w)  WW  WW i) d)   DD    B)   bb   a)AAA  n)   NN c)      e)EEEE  w)  WW  WW i) c)          z)  
+			           <br>  A)    aa r)      w)  WW  WW i) d)   DD    B)    bb a)   A  n)   NN c)      e)      w)  WW  WW i) c)        z)    
+			           <br>  A)    aa r)       w)WW WWW  i)  d)DDDD    B)bbbbb   a)AAAA n)   NN  c)CCCC  e)EEEE  w)WW WWW  i)  c)CCCC z)ZZZZZ 
+			            
+			           </div>
+			          -->
+			  </h1> 
 			<div class="clear"></div> 
-			<!--<h2 class="title">Recent Computer Engineer Grad</h2>-->
+      <h2 class="title">The web is our playground, the world our oyster.</h2>
 		</div>	
 		<div class="adr"> 
 			<div class="physical"> 
@@ -243,6 +391,7 @@ section.education-wrapper {border-top:1px dotted #888; margin-top: 1em; padding-
   		-->
   			</div> 
   			<div class="virtual"> 
+          <!-- <div><span class="val" style="">arwid bancewicz</span></div> -->
 			  <!-- <div><span class="key"></span> <span class="val"><span class="locality">Toronto</span>, <span class="region">Ontario</span></span></div> -->
 				<div><span class="key">Site</span> <span class="val"><a class="url" href="http://arwid.ca">arwid.ca</a></span></div> 
         
@@ -251,21 +400,27 @@ section.education-wrapper {border-top:1px dotted #888; margin-top: 1em; padding-
   				</div> 
   				
   				<div><span class="key">Mobile</span> <span class="val">647.338.4599</span></div>
+  				<!--<div><b>Open</b> to new opportunities <tt>:*</tt></div>-->
 	  		</div>	
 		</div> 
 	</div> 
 	<div class="clear"></div> 
 	
-<!--
+  <!-- <hr class="sect-separator"> -->
 	<div class="summary-wrapper"> 
 	  	
 		<p class="summary"> 
-		  <!-- Arwid is an Artist, Graphic Designer, Coder, and recent Computer Engineering Grad. ->
-		  Arwid is passionate about design, development, and business. He is currently nose deep in the Ruby on Rails community, freelancing, and working on <a href="http://myQuadoo.com">myQuadoo.com</a>.
+		  Arwid lives at the delta of design, development, and business which are undeniably the three major themes in his life, and in that order. He wishes to be at the forefront of web technologies where he can push the envelope of innovation and create greater value to society. Currently, he can be found in the Ruby on Rails community in his home town Toronto, and working on a pet project <a href="http://myQuadoo.com">myQuadoo.com</a> which he hopes will revolutionize a niche market and maybe even add a new word into the dictionary. <!--He is always open to new opportunities and talking about startups.-->
+		  
+		  <br><br>He hopes to one day be known as an Artist, Designer, Developer, and Leader, and wishes for young people to stop referring to themselves as Entrepreneurs and Founders, but Creators. <!--Experiments over startups, companies as families, and the elimination of corporate titles, Investment as our juice.-->
+		  
+		  Being a Canadian with a love for hockey, he enjoys looking at vertical markets as hockey leagues and loves comparing companies to hockey teams. Rightly so, he is currently looking at getting drafted and would one day love to captain his own team.
+		  <!-- Arwid is an Artist, Graphic Designer, Coder, and recent Computer Engineering Grad. -->
+		  <!--Arwid is passionate about design, development, and business. He is currently nose deep in the Ruby on Rails community, freelancing, and working on <a href="http://myQuadoo.com">myQuadoo.com</a>.-->
 		</p> 
 	
-	</div> 
--->
+	</div>
+  	<hr class="sect-separator">
 	
 	<!--
 	<div class="summary-wrapper"> 
@@ -303,7 +458,6 @@ section.education-wrapper {border-top:1px dotted #888; margin-top: 1em; padding-
  
 	<div class="clear"></div>
 	-->
-	
 	<section class="education-wrapper"> 
 		<div class="header"> 
 			<h2>Education</h2> 
@@ -322,7 +476,7 @@ section.education-wrapper {border-top:1px dotted #888; margin-top: 1em; padding-
 							<li>Honours: Dean’s Honour List 2005-2007, Ranked as high as 4th out of 130 students</li>		
   						<li>Focus: Software, Networks, Business & Entrepreneurship (U of T Entrepreneurial Course Series)</li>
   						<li>Had one of the top ECE243 projects in the class of 290 and one of only two projects implementing 3D graphics</li>
-  						<li>1 of 40 from graduating class with Entrepreneurship, Innovation, and Small Business Management Certificate</li>	
+  						<li>Received the Entrepreneurship, Innovation, and Small Business Management Certificate</li>	
   						<li>Bridge Design Runoff Finalist, 2005</li>			
 						</ul>	
 					</div>	
@@ -575,6 +729,21 @@ section.education-wrapper {border-top:1px dotted #888; margin-top: 1em; padding-
 		<div class="content">   
 			<p style="margin: 10px 10px;">The following statistics were generated from current local code repositories and based on characters of code:</p>
     
+    
+      <div class="bars">
+
+          		<div class="bar"><div class="label">Javascript</div><div class="bar1" style="width: 41%">&nbsp;</div><div class="value">41%</div>&nbsp;</div>
+          		<div class="bar"><div class="label">HTML/HAML/ERB</div><div class="bar2" style="width: 17%">&nbsp;</div><div class="value">17%</div>&nbsp;</div>
+          		<div class="bar"><div class="label">Java/<abbr title="Java CC">JJ</abbr></div><div class="bar3" style="width: 16%">&nbsp;</div><div class="value">16%</div>&nbsp;</div>
+          		<div class="bar"><div class="label">CSS/<abbr title="Sassy CSS">SCSS</abbr>/<abbr title="Syntactically Awesome Stylesheets">SASS</abbr></div><div class="bar4" style="width: 10%">&nbsp;</div><div class="value">10%</div>&nbsp;</div>
+          		<div class="bar"><div class="label">C#</div><div class="bar5" style="width: 7%">&nbsp;</div><div class="value">7%</div>&nbsp;</div>
+          		<div class="bar"><div class="label">Ruby</div><div class="bar6" style="width: 3%">&nbsp;</div><div class="value">3%</div>&nbsp;</div>
+          		<div class="bar"><div class="label">C/C++</div><div class="bar7" style="width: 1%">&nbsp;</div><div class="value">1%</div>&nbsp;</div>
+          		<div class="bar"><div class="label">ActionScript</div><div class="bar8" style="width: 1%">&nbsp;</div><div class="value">1%</div>&nbsp;</div>
+          		<div class="bar"><div class="label">PHP</div><div class="bar9" style="width: 1%">&nbsp;</div><div class="value">1%</div>&nbsp;</div><br>
+          	</div>
+    
+    
 			<ul class="skills"> 
 			  <li class="skill">JavaScript (41%)</li>
 				<li class="skill">HTML/HAML/ERB (17%)</li>
@@ -704,6 +873,8 @@ section.education-wrapper {border-top:1px dotted #888; margin-top: 1em; padding-
   	<div class="clear"></div> 
   	-->
   	
+  	<hr class="flourishes flourish-01">
+  	
 	<footer> 
 		<div class="header"></div> 
 		<div class="content-wrapper"> 
@@ -720,6 +891,8 @@ section.education-wrapper {border-top:1px dotted #888; margin-top: 1em; padding-
  
  
 			</div> <!-- end of #wrapper --> 
+			<div class="wrapper-shadow l"></div>
+			<div class="wrapper-shadow r"></div>
 </article><!-- end of #content --> 
 	
 	
