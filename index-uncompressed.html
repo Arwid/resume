@@ -104,9 +104,9 @@
           ul#options li#pdf-resume a{background-color:#6B8E23;}
           @media screen{ul#options li#pdf-resume a:hover{background-color:#556b2f;}
           }
-          ul#options li#linkedin a{background-color:#1E90FF;}
-          @media screen{ul#options li#linkedin a:hover{background-color:#4169E1;}
-          }
+/*          ul#options li#linkedin a{background-color:#1E90FF;}*/
+          /*@media screen{ul#options li#linkedin a:hover{background-color:#4169E1;}
+                    }*/
           #content{position:relative;margin:30px auto;width:980px;font-size:1.4em;}
           #content h3{margin:0;}
           #content span.org{font-style:italic;}
@@ -187,10 +187,12 @@
           .wrapper-shadow{background:url(http://static.tumblr.com/njty47g/yu0leufgq/post_shadow.png) left bottom no-repeat;width:50%;height:10px;display:block;position:absolute;left:0;bottom:-10px;z-index:2;}
           .wrapper-shadow.r{left:auto;right:0;background-position:right bottom;}
           header{background:#111;background:-webkit-gradient(linear,left top,left bottom,from(#333),to(#111));background:-moz-linear-gradient(top,#333,#111);background:transparent 9;box-shadow:0 1px 2px rgba(0,0,0,0.5);-moz-box-shadow:0 1px 2px rgba(0,0,0,0.5);-webkit-box-shadow:0 1px 2px rgba(0,0,0,0.5);}
-          /*!printing */ @media print{#nav-wrapper{display:none;}
+          /*!printing */ 
+          @media print{
+          #nav-wrapper{display:none;}
           #wrapper{padding:0;}
           #content{margin:0;}
-          h1{padding-left:0;color:#000;}
+          h1{padding-left:0;color:#000;padding:0;}
           body,a{color:#000;}
           div.summary-wrapper{border-bottom:1px solid #888;border-top:1px solid #888;}
           abbr[title]{border-bottom:none;}
@@ -211,8 +213,9 @@
           footer{border-top:1px solid #888;padding-top:.5em;margin-top:.5em;}
           abbr,a{border:none;}
           .wrapper-shadow{display:none}
-          @page :first{margin:.5in;margin-bottom:.3in;}
+          @page :first{margin:.5in;margin-bottom:.25in;}
           }
+          /* end printing */
           ul#options li a{display:block;}
           ul#options li#home{float:left;display:none;}
           ul#options li#home a{background-image:url(images/home.png);background-repeat:no-repeat;width:30px;}
@@ -221,7 +224,23 @@
           article nav#menu{position:fixed;top:100px;float:left; width: 100px; margin-left: -100px; text-align:right;}
           article nav#menu a{opacity:0.2}
           article nav#menu a.selected{background:black;opacity:1}
+          .summary-wrapper .summary{margin-bottom:0.5em;}
+           ul#options li#print a,ul#options li#pdf a{background:#1E90FF}
+/*          ul#options li#print,ul#options li#pdf{float:left}*/
+          @media screen{ul#options li#print a:hover,ul#options li#pdf a:hover{background-color:#4169E1;}
+        }
+          ul#options li.vr {
+          border-left: 1px solid #040404;
+          border-right: 1px solid #2F2F2F;
+          height: 30px;
+          display: inline-block;
+          margin-top: -5px;
+          margin-bottom: -5px;
+/*          margin: 6px 3px 1px 3px;*/
+          }
+          
 /*          body{margin-bottom:300px;}*/
+          /*<div style="background:url(images/resume.png) no-repeat; width:243px;height:30px;position:absolute;top:8px;right:42px"></div>*/
         </style>
         <!-- <script type="text/javascript" src="http://use.typekit.com/xop3pyh.js"></script>
         <script type="text/javascript">try{Typekit.load();}catch(e){}</script> -->
@@ -239,6 +258,9 @@
                 <li id="github"><a href="//github.com/arwid" rel="external">Github</a></li>
                 <li id="twitter"><a href="//twitter.com/arwidb" rel="external">Twitter</a></li>
                 <li id="linkedin"><a href="//www.linkedin.com/in/arwid" rel="external">LinkedIn</a></li>
+                <li class="vr"></li>
+                <li id="pdf"><a href="//arwid.github.com/resume/Arwid Bancewicz – Resumé">PDF</a></li>
+                <li id="print"><a href="javascript:window.print();return false;">Print</a></li>
             </ul>
         </nav>
     </header>
@@ -264,9 +286,14 @@
             <li><a href="#extracurricular">Extra-curricular</a></li>
             <li><a href="#awards">Awards</a></li>
           </ul> 
-        </nav>-->
+        </nav>
+        -->
       
         <div id="wrapper">
+          <!-- <div style="background:url(images/resume.png) no-repeat; width:243px;height:30px;position:absolute;top:8px;right:42px"></div> -->
+              <!-- <div style="background:url(images/printButton.png) no-repeat; width:50px;height:14px;position:absolute;top:8px;right:42px"></div>
+                           <div style="background:url(images/pdf2.png) no-repeat; width:32px;height:32px;position:absolute;top:8px;right:10px"></div> -->
+              
             <div class="hresume">
                 <div class="vcard">
                     <div class="title-wrapper">
@@ -292,8 +319,8 @@
 
                 <div class="summary-wrapper">
                     <p class="summary">
-                        Arwid lives at the delta of design, development, and business which are undeniably the three major themes in his life, and in that order. He wishes to be at the forefront of web technologies where he can push the envelope of innovation and create greater value to society. Currently, he can be found among the Ruby on Rails community in his home town Toronto, and working on a pet project <a href="http://myQuadoo.com">myQuadoo.com</a> which he hopes will dominate a niche market and maybe even add a new word into the dictionary.
-                        <br><br>He hopes to one day be known as an Artist, Designer, Developer, and Leader, and wishes for young people to stop referring to themselves as Entrepreneurs and Founders, but Creators.
+                        Arwid lives at the delta of design, development, and business which are undeniably the three major themes in his life, and in that order. He wishes to be at the forefront of web technologies where he can push the envelope of innovation and create greater value to society. Currently, he can be found among the Ruby on Rails community in his home town Toronto, and working on a pet project <a href="http://myQuadoo.com">myQuadoo.com</a> which he hopes will dominate a niche market and add the word quadoo into our vocabularies.
+                        </p><p>He hopes to one day be known as an Artist, Designer, Developer, and Leader, and wishes for young people to think twice before referring to themselves as Entrepreneurs and Founders, but Creators.
                         Being a Canadian with a love for hockey, he enjoys looking at vertical markets as hockey leagues and loves comparing companies to hockey teams. Rightly so, he is currently looking at getting drafted and would one day love to captain his own team.
                     </p>
                 </div>
@@ -393,9 +420,9 @@
                                         <ul>
                                             <li><a href="//myQuadoo.com">myQuadoo</a>, <abbr title="2011-05-20">2011</abbr> - Currently working on bleeding edge web app with the aim of submitting it into multiple app stores.</li>
                                             <li><a href="//moso.com">Moso</a>, <abbr title="2010-12-01">Dec 2010</abbr>-<abbr title="2011-02-01">Feb 2011</abbr> - Lead Developer for a startup on a project basis to create their initial developments. Worked with Ruby on Rails, social APIs, jQuery, Sammy, jQuery mobile, and Sencha touch.</li>
-                                            <li><a href="//newhouseconnect.com">NewhouseConnect</a>, <abbr title="2011-03-01">Mar 2011</abbr> - Developed website with Ruby on Rails3, PHP5 for RETS connection, HTML5, and CSS3. Worked with Normative Design who wire-framed, designed, and managed the project. Created jQuery plugins, ruby-boilerpoint, and optimized the site for performance.</li>
+                                            <li><a href="//newhouseconnect.com">NewhouseConnect</a>, <abbr title="2011-03-01">Mar 2011</abbr> - Developed website with Ruby on Rails3, PHP5 for RETS connection, HTML5, and CSS3. Worked with Normative Design who wire-framed, designed, and managed the project. Created several open source plugins.</li>
                                             <li>Ernescliff College, <abbr class="dtstart" title="2008-01-01">2008</abbr> - Created a dynamic database driven flash website for a U of T student residence; including a Content Management System (CMS) for maintaining website content and a Gallery Management System for maintaining photo galleries.</li>
-                                            <li><a href="//livingspanish.ca">Living Spanish</a>, <abbr title="2007-01-01">2007</abbr> - Created a copycat of <a href="//freshbooks.com">freshbooks.com</a>, an online management system for managing clients and staff with built-in invoicing and mass emailing. Improved website, did search engine optimization, and synchronized its online calendar with Google Calendar.</li>
+                                            <li><a href="//livingspanish.ca">Living Spanish</a>, <abbr title="2007-01-01">2007</abbr> - Created a copycat of <a href="//freshbooks.com">freshbooks.com</a>, an online management system for managing clients and staff with built-in invoicing and mass emailing. Improved website, <abbr title="Search Engine Optimization">SEO</abbr>, and synchronized its online calendar with Google Calendar.</li>
                                             <li><a href="//registerit.ca">RegisterIt</a>, <abbr title="2007-05-01">May 2007</abbr>-<abbr title="2007-08-01">Aug 2007</abbr> - Created, maintained, and debugged websites and large site databases; including Content Management Systems. Researched web technologies to augment product and service offerings to a broader niche of customers. Worked for clients including Perimeter Financial Corp, HD Supply, Ducati Toronto, and Lamborghini Toronto.</li>
                                             <li><a href="//livingspanish.ca">Living Spanish</a>, <abbr title="2005-01-01">2005</abbr> - Created a stunning website for a small business to give it a web presence and a set corporate identity. Worked closely with client during the entire process for a custom and personalized web-based solution.</li>
 
@@ -609,10 +636,10 @@
                                     <!--<span class="location"></span>-->
                                     <div class="summary">
                                         <ul>
-                                            <li>Intramural Ice Hockey, Engineering Athletics Association (EAA), U of T, <abbr title="2009">2009</abbr>-<abbr title="2011">2011</abbr></li>
+                                            <li>Intramural Ice Hockey, <abbr title="Engineering Athletics Association">EAA</abbr>, U of T, <abbr title="2009">2009</abbr>-<abbr title="2011">2011</abbr></li>
                                             <li>GoodLife Fitness member, <abbr title="2005">2005</abbr>-<abbr title="2009">2009</abbr></li>
-                                            <li>Ice Hockey, ASHL, PHN, <abbr title="2002">2002</abbr>-<abbr title="2008">2008</abbr></li>
-                                            <li>Glider Pilot, York Soaring Association, <abbr title="2004">2004</abbr>-<abbr title="2008">2008</abbr></li>
+                                            <li>Ice Hockey, <abbr title="Adult Safe Hockey League">ASHL</abbr>, <abbr title="Professional Hockey Network">PHN</abbr>, <abbr title="2002">2002</abbr>-<abbr title="2008">2008</abbr></li>
+                                            <li>Glider Pilot, <abbr title="York Soaring Association">YSA</abbr>, <abbr title="2004">2004</abbr>-<abbr title="2008">2008</abbr></li>
                                             <li>120 km bike trip to Niagara, <abbr title="2007">2007</abbr></li>
                                             <li>Ice Hockey, West Mall Lightning, <abbr title="">Youth</abbr>-<abbr title="2007">2007</abbr></li>
                                         </ul>
@@ -663,7 +690,7 @@
                 </section>
                 <div class="clear"></div>
                 -->
-                <hr class="sect-separator">
+                <hr class="seperator">
 
                 <footer>
                     <div class="header"></div>
