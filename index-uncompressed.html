@@ -162,7 +162,7 @@
           div.content-wrapper{padding-left:150px;}
           section{position:relative;}
           #online-at{border:1px solid #000;display:inline;padding:.5em;font-size:1.3em;}
-          #online-at-wrapper{width:100%;text-align:center;padding:10px 0;}
+          #online-at-wrapper{width:100%;text-align:center;padding:10px 0;position:absolute;z-index:333;}
           #content div.dates{position:absolute;right:0;top:.5em;text-align:right;}
           #content div.dates .desc{text-align: right;font-style: italic;font-size: 0.8em;line-height:1.5em;}
           .vcard .adr>div{width:260px;float:right;}
@@ -192,7 +192,8 @@
           .bar div.value{float:left;background-color:black;color:white;padding:2px 4px;margin-top:8px;}
           .bars{padding:5px 5px 15px 5px;overflow:auto;}
           div.summary-wrapper{margin-top:.5em;}
-          @media screen{#online-at-wrapper{display:none;}
+          @media screen{
+          #online-at-wrapper{display:none;}
           .vcard .adr .virtual{margin-top:2em;}
           }
           /*!separator */ .seperator{height:16px;margin:1em 0;background:transparent url("images/line.png") no-repeat center -61px;border:0;outline:0;opacity:.2;filter:alpha(opacity=20);text-indent:-9000px;clear:both;}
@@ -218,21 +219,21 @@
           #wrapper{padding:0;}
           #content{margin:0;}
           div.header h2{margin-top:5px;}
-          h1{padding-left:0;color:#000;padding:0;}
+          h1{padding-left:0;color:#000;padding:0;margin-top:34px;}
           body,a{color:#000;}
           div.summary-wrapper{border-bottom:1px solid #888;border-top:1px solid #888;}
           .intro-wrapper{display:none;}
           abbr[title]{border-bottom:none;}
           .title-wrapper h1{padding:0;display:inline-block !important;float:left;}
           .title-wrapper .clear{display:none !important;}
-          .title-wrapper .title{display:inline-block !important;margin-left:5px;float:left;margin-top:42px;font-size:12px;color:#666;}
+          .title-wrapper .title{display:inline-block !important;margin-left:5px;float:left;margin-top:76px;font-size:12px;color:#666;}
           #content a{border-bottom:none;}
           .email i{display:none;}
           .email b:after{content:'rwi';}
           div.content ol li{page-break-before:auto;}
           div.summary-wrapper{margin:1em 0;}
           #online-at-wrapper{display:block;}
-          .vcard .adr .virtual{margin-top:1em;}
+          .vcard .adr .virtual{margin-top:1.8em;}
           section.language-wrapper ul.skills{display:block;}
           .bars{display:none;}
           div.summary-wrapper{display:none;}
@@ -345,6 +346,7 @@
                             <div><span class="key">Site</span> <span class="val"><a class="url" href="http://arwid.ca" target="_top">arwid.ca</a></span></div>
                             <div><span class="key">Email</span> <span class="val email"><a href="http://www.google.com/recaptcha/mailhide/d?k=01DpKFdVRELWzne4DZluz3fA==&amp;c=OXFJlwFdN7wg5p7Ir3bZ-w==" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\07501DpKFdVRELWzne4DZluz3fA\75\75\46c\75OXFJlwFdN7wg5p7Ir3bZ-w\75\075', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address" target="_top">a<i>...</i><b></b>d</a>@arwid.ca</span></div>
                             <div><span class="key">Mobile</span> <span class="val">+1.857.919.7953</span></div>
+                            <div><span class="key">Address</span> <span class="val">Redmond, WA</span></div>
                             <!--<div><b>Open</b> to new opportunities <tt>:*</tt></div>-->
                         </div>
                     </div>
@@ -426,7 +428,7 @@
                                     <a href="#arwid-bancewicz" class="include" title="Arwid Bancewicz"></a>
                                     <h3 class="title">Co-Founder</h3>
                                     <a class="org highlight" href="http://lookflix.com"><img src="http://profile.ak.fbcdn.net/hprofile-ak-frc1/373522_515607808452894_1949383144_q.jpg">LookFlix<span>.com</span></a>
-                                    <span class="tagline">Social Shopping, 3 Co-Founders, Boston</span>
+                                    <span class="tagline">Social Shopping, 3 Co-Founders, Boston, MA</span>
                                     <div class="dates"><abbr class="dtstart" title="2012-06-01">Jun 2012</abbr> - <abbr title="2013-05-01">May 2013</abbr><div class="desc">1 year</div></div>
                                     <!-- <div style="background:url(images/camilion.png); width:100px; height:31px;position:absolute;left:-150px;top:80px;"></div> -->
                                     <!-- <span class="location">Richmond Hill, Ontario</span>  -->
@@ -442,7 +444,7 @@
                                     <a href="#arwid-bancewicz" class="include" title="Arwid Bancewicz"></a>
                                     <h3 class="title">Founder</h3>
                                     <a class="org highlight" href="http://laborific.com"><img src="http://laborific.com/favicon.ico">Laborific<span>.com</span></a>
-                                    <span class="tagline">Development Shop & Idea Incubator, Toronto</span>
+                                    <span class="tagline">Development Shop & Idea Incubator, Toronto, ON</span>
                                     <div class="dates"><abbr class="dtstart" title="2011-11-01">Nov '11</abbr> - <abbr class="dtstart" title="2012-08-01">Aug '12</abbr>, <abbr class="dtstart" title="2013-06-01">Jun '13</abbr> - <abbr title="2014-02-01">Present</abbr><div class="desc">1 year, 4+ months</div></div>
                                     <!-- <div style="background:url(images/camilion.png); width:100px; height:31px;position:absolute;left:-150px;top:80px;"></div> -->
                                     <!-- <span class="location">Richmond Hill, Ontario</span>  -->
@@ -471,7 +473,7 @@
                                     <a href="#arwid-bancewicz" class="include" title="Arwid Bancewicz"></a>
                                     <h3 class="title">Co-Founder</h3>
                                     <a class="org highlight" href="http://vertexio.herokuapp.com"><img src="http://vertexio.herokuapp.com/favicon.ico">Vertex.IO</a>
-                                    <span class="tagline">Making Mobile Development Easy, 4 Co-Founders, Toronto</span>
+                                    <span class="tagline">Making Mobile Development Easy, 4 Co-Founders, Toronto, ON</span>
                                     <div class="dates"><abbr class="dtstart" title="2008-05-01">Jun 2011</abbr> - <abbr title="2009-08-01">Oct 2011</abbr><div class="desc">5 months</div></div>
                                     <!-- <div style="background:url(images/camilion.png); width:100px; height:31px;position:absolute;left:-150px;top:80px;"></div> -->
                                     <!-- <span class="location">Richmond Hill, Ontario</span>  -->
@@ -489,7 +491,7 @@
                                     <a href="#arwid-bancewicz" class="include" title="Arwid Bancewicz"></a>
                                     <h3 class="title">Lead Web App Developer<i>Contract, Project-basis</i></h3>
                                     <a class="org highlight" href="http://eventmobi.com"><img src="http://www.eventmobi.com/_images/favicon.ico">EventMobi<span>.com</span></a>
-                                    <span class="tagline">Mobile Apps for Events, ~28 Employee Startup, Toronto</span>
+                                    <span class="tagline">Mobile Apps for Events, ~28 Employee Startup, Toronto, ON</span>
                                     <div class="dates"><abbr class="dtstart" title="2008-05-01">Dec 2011</abbr> - <abbr title="2009-08-01">Apr 2012</abbr><div class="desc">4 months</div></div>
                                     <!-- <div style="background:url(images/camilion.png); width:100px; height:31px;position:absolute;left:-150px;top:80px;"></div> -->
                                     <!-- <span class="location">Richmond Hill, Ontario</span>  -->
@@ -505,7 +507,7 @@
                                     <a href="#arwid-bancewicz" class="include" title="Arwid Bancewicz"></a>
                                     <h3 class="title">Lead Software Developer<i>Contract, Month-to-month</i></h3>
                                     <span class="org highlight"><img src="http://www.moso.com/favicon.png">Moso<span>.com</span></span>
-                                    <span class="tagline">Social Platform For Innovation, ~6 Employee Startup, Toronto</span>
+                                    <span class="tagline">Social Platform For Innovation, ~6 Employee Startup, Toronto, ON</span>
                                     <div class="dates"><abbr class="dtstart" title="2008-05-01">Dec 2010</abbr> - <abbr title="2009-08-01">Feb 2011</abbr><div class="desc">2 months</div></div>
                                     <!-- <div style="background:url(images/camilion.png); width:100px; height:31px;position:absolute;left:-150px;top:80px;"></div> -->
                                     <!-- <span class="location">Richmond Hill, Ontario</span>  -->
@@ -521,7 +523,7 @@
                                     <a href="#arwid-bancewicz" class="include" title="Arwid Bancewicz"></a>
                                     <h3 class="title">Software Developer<i>Contract, 16-months</i></h3>
                                     <a class="org highlight" href="http://camilion.com"><img src="http://www.sap.com/etc/designs/sapcom/resources/www_sap_com/favicon.ico">Camilion Solutions (Now part of SAP)</a>
-                                    <span class="tagline">Insurance Software, ~200 Employees, Richmond Hill</span>
+                                    <span class="tagline">Insurance Software, ~200 Employees, Richmond Hill, ON</span>
                                     <div class="dates"><abbr class="dtstart" title="2008-05-01">May 2008</abbr> - <abbr title="2009-08-01">Aug 2009</abbr><div class="desc">16 months</div></div>
                                     <!-- <div style="background:url(images/camilion.png); width:100px; height:31px;position:absolute;left:-150px;top:80px;"></div> -->
                                     <!-- <span class="location">Richmond Hill, Ontario</span>  -->
@@ -538,7 +540,7 @@
                                     <a href="#arwid-bancewicz" class="include" title="Arwid Bancewicz"></a>
                                     <h3 class="title">Lead Software Developer<i>Part-time/Full-time</i></h3>
                                     <span class="org highlight"><img src="http://vengeo.com/favicon.ico">Vengeo<span>.com</span></span>
-                                    <span class="tagline">E-publishing, ~20 Employee Startup, Toronto</span>
+                                    <span class="tagline">E-publishing, ~20 Employee Startup, Toronto, ON</span>
                                     <div class="dates"><abbr class="dtstart" title="2005-05-01">May 2005</abbr> - <abbr title="2008-05-01">May 2008</abbr><div class="desc">3 years</div></div>
                                     <!-- <div style="background:url(images/vengeo.jpg); width:195px; height:67px;position:absolute;left:-200px;top:20px;"></div> -->
                                     <!-- <span class="location">Toronto, Ontario</span> -->
