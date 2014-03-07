@@ -79,7 +79,10 @@
           fieldset{border:none;}
           input,textarea{font-family:inherit;font-size:1em;}
           a{color:#fff;text-decoration:none;background-color:#111;}
-          @media screen{a:hover{color:#111;background-color:#fff;}
+          .screenonly{display:none;}
+          @media screen{
+               a:hover{color:#111;background-color:#fff;}
+               .screenonly{display:block;}
           }
           .content a,.summary a{color:#555;background-color:#fff;padding:0 2px;-webkit-transition:color .25s ease-in;-moz-transition:color .25s ease-in;-o-transition:color .25s ease-in;transition:color .25s ease-in;border-bottom:1px dashed #2D5795;}
           .content a:empty{padding:0;}
@@ -237,6 +240,7 @@
           .vcard .adr .virtual{margin-top:1.8em;}
           section.language-wrapper ul.skills{display:block;}
           .bars{display:none;}
+          #content div.summary ul{margin:0 0 10px 15px;}
           div.summary-wrapper{display:none;}
           section.education-wrapper{border-top:1px solid #888;margin-top:.5em;padding-top:.5em;}
           .seperator{display:none;}
@@ -275,6 +279,11 @@
           
 /*          body{margin-bottom:300px;}*/
           /*<div style="background:url(images/resume.png) no-repeat; width:243px;height:30px;position:absolute;top:8px;right:42px"></div>*/
+          .summary .cols2 > * {
+               width: 50%;
+               float: left;
+               list-style: none;
+          }
         </style>
         <!-- <script type="text/javascript" src="http://use.typekit.com/xop3pyh.js"></script>
         <script type="text/javascript">try{Typekit.load();}catch(e){}</script> -->
@@ -437,6 +446,7 @@
                                     <div class="summary">
                                         <ul>
                                             <li>Finalists in the MassChallenge startup accelerator in Boston and part of Microsoft BizSpark One.</li>
+                                            <li>Responsibilities: Team, Vision, Product, Strategy, Front-end Dev, Design, PR</li>
                                             <li>Tech Stack: CoffeeScript/BackboneJS/Zepto/HBS/Haml/SaSS/CSS3/ROR3/Azure/C#.Net/PostgreSQL/GIT</li>
                                             <li class="hidden">A touch-based clothing discovery app built with BackboneJS/Rails/C#/.net; served in FB and as an ecommerce site widget.</li>
                                         </ul>
@@ -533,7 +543,7 @@
                                             <li>Architected a new UI for an existing product in Ext JS/J2EE/Spring and supported teams as the Ext Expert.</li>
                                             <!--<li>Became known among colleagues and managers as the <q>EXT JS expert</q> and was the go-to guy for related issues.</li>
                                             <li>Worked in Agile software development (SCRUM) with latest software technologies (J2EE, Spring, Ext JS).</li>-->
-                                            <li class="hidden">Experienced the life cycles of two product releases (including QA); and a new product prototype.</li>
+                                            <li>Experienced the life cycles of two product releases (including formal QA); and a new product prototype.</li>
                                         </ul>
                                     </div>
                                 </li>
@@ -589,7 +599,8 @@
                                     <!-- <span class="location">Ontario</span> -->
                                     <div class="summary">
                                         <ul>
-                                             <li>Chess game in Java. Available at <a href="http://sourceforge.net/projects/aichess" rel="external" target="_top">sourceforge.net/projects/aichess</a>, <a href="http://github.com/Arwid/chess" rel="external" target="_top">github.com/Arwid/chess</a>, <a href="http://mac.softpedia.com/get/Games/Arvydas-Chess.shtml" rel="external" target="_top">mac.softpedia.com/get/Games/Arvydas-Chess.shtml.</a></li>
+                                             <li>Chess game in Java. Available at <a href="http://sourceforge.net/projects/aichess" rel="external" target="_top">sourceforge.net/projects/aichess</a>, <a href="http://github.com/Arwid/chess" rel="external" target="_top">github.com/Arwid/chess</a>, and at<a href="http://mac.softpedia.com/get/Games/Arvydas-Chess.shtml" rel="external" target="_top">softpedia.com</a></li>
+                                             <li>95 source files, 15,000+ lines of code. Learned principals behind AI, optimizing AIs, threading, and LAN communication.</li>
                                         </ul>
                                         <p class="hidden"></p>
                                         <ul class="hidden">
@@ -612,6 +623,7 @@
                                         <ul>
                                              <li>Created <a href="http://github.com/Arwid/jQuery.scrollIntoView" rel="external" target="_top">jQuery.scrollIntoView</a>, <a href="http://github.com/Arwid/JSON_Minifier" rel="external" target="_top">JSON_Minifier</a>, <a href="http://github.com/Arwid/jQuery.Page" rel="external" target="_top">jQuery.Page</a>, <a href="http://github.com/Arwid/jQuery.ui.animSortable" rel="external" target="_top">jQuery.ui.animSortable</a>, <a href="http://github.com/Arwid/haml_sprockets_engine" rel="external" target="_top">Haml Sprockets Engine</a>.</li>
                                              <li>Founding member of <abbr title="Educate, Promote, Inspire, Connect">EPIC</abbr> student conference, <a href="http://cutc.ca" rel="external" target="_top"><abbr title="Canadian Undergraduate Technology Conference">CUTC</a> Ambassador, <a href="http://peoconference.skule.ca" rel="external" target="_top"><abbr title="Professional Engineers of Ontario">PEO</a> Webmaster, Presented <a href="http://slideshare.net/arwid/jquery-4470993" rel="external" target="_top">jQuery Introduction</a>.</li>
+                                             <li>Regularly attend tech events and conferences, and partipated in 4 startup weekend hackathons.</li>
                                         </ul>
                                     </div>
                                     <div class="summary hidden">
@@ -631,36 +643,6 @@
                                             <li><a href="//hiepic.com" rel="external" target="_top"><abbr title="Educate, Promote, Inspire, Connect">EPIC</abbr></a> <abbr title="2010">2010</abbr> - Participated during the initial stages of a new technology conference and helped acquire U of T as their largest sponsor.</li>
                                             <li><a href="//cutc.ca" rel="external" target="_top"><abbr title="Canadian Undergraduate Technology Conference">CUTC</abbr></a> <abbr title="2009">2009</abbr>, Conference Ambassador for U of T - Was responsible for gaining support from U of T faculties and departments, promoted the conference to the student body, and ultimately bringing in a stronger delegation from U of T than prior years.</li>
                                             <li><a href="//peoconference.skule.ca" rel="external" target="_top"><abbr title="Professional Engineers of Ontario">PEO</abbr> Student Conference</a> <abbr title="2007">2007</abbr>, Webmaster - Created and maintained a conference website that can easily change in site content and structure. Underwent a highly communicative process with constant change of requirements and content. Created a unique, dynamic, and secure online registration system that successfully processed 60 delegates from 14 different universities, including automated email notifications, and an administrative end.</li>
-                                        </ul>
-                                    </div>
-                                </li>
-                            </ol>
-                        </div>
-                    </div>
-                </section>
-                <div class="clear"></div>
-
-                <section class="coursework-wrapper hidden" id="coursework">
-                    <div class="header">
-                        <h2>Coursework</h2>
-                    </div>
-                    <div class="content-wrapper">
-                        <div class="content">
-                            <ol class="vcalendar">
-                                <li class="vevent vcard experience">
-                                    <a href="#arwid-bancewicz" class="include" title="Arwid Bancewicz"></a>
-                                    <!-- <h3 class="title"></h3> -->
-                                    <!-- <span class="org highlight"></span>  -->
-                                    <!-- <div class="dates"><abbr class="dtstart" title="2005-09-01">Sept 2005</abbr> - <abbr title="2010-11-01">Nov 2010</abbr></div>  -->
-                                    <!--<span class="location"></span>-->
-                                    <div class="summary">
-                                        <ul>
-                                            <li><strong>Final Design Project</strong>, <abbr title="2010">2010</abbr><br>Worked on enhancing an existing software; a distributed Publish/Subscribe middleware designed for large-scale event management applications. Replaced the existing message creation mechanism with JavaCC parsers to allow the software to accept industrial-standard communication protocols such as XML, JSON, and YAML.</li>
-                                            <li><strong>Web Project (TagIT), ECE450</strong>, <abbr title="2010">2010</abbr><br>Participated in a class-wide software project in developing a social networking service for Auto Service Centres. Researched jQuery, along with other JavaScript libraries, and prepared a presentation for the class.</li>
-                                            <li><strong>HTTP Server Design Project, ECE299</strong>, <abbr title="2007">2007</abbr><br>Lead a team of three to create an object-oriented HTTP web server in C++. Implemented multi-threading, server clustering, log files, graceful server shutdown, and various features for protocol processing such as virtual web hosting, automatic pathname expansion, and dynamic content handling.</li>
-                                            <li><strong>Digital Systems Project (3D Objects), ECE983/241</strong>, <abbr title="2006">2006</abbr><br>One of the top projects in the class of 290 and one of only two projects implementing 3D graphics. Created a 3D system in hardware (Verilog & Schematics) that displays a transformable 3D object. Large Size & Complexity: over 40 min to compile compared to 5 min for other class projects. Learned Verilog beyond scope of course and did personal research in 3D graphics theory. Implemented line drawing algorithms & trigonometric computation in hardware.</li>
-                                            <li><strong>Assembly Project, ECE243</strong>, <abbr title="2007">2007</abbr><br>Coded a memory game in 68k Assembly using a hex keypad user-interface, microphone and speakers.</li>
-                                            <li><strong>Communication Device, ECE298</strong>, <abbr title="2006">2006</abbr><br>Enabled communication between two devices by transmitting various laser beam frequencies.</li>
                                         </ul>
                                     </div>
                                 </li>
@@ -781,7 +763,7 @@
                                     <!-- <div class="dates"><abbr class="dtstart" title="2005-09-01">Sept 2005</abbr> - <abbr title="2010-11-01">Nov 2010</abbr></div>  -->
                                     <!--<span class="location"></span>-->
                                     <div class="summary">
-                                        <ul>
+                                        <ul class="cols2">
                                             <li>Toastmasters, 3 Clubs, PR Officer</li>
                                             <li>Ice Hockey, <abbr title="Engineering Athletics Association">EAA</abbr>, <abbr title="Adult Safe Hockey League">ASHL</abbr>, <abbr title="Professional Hockey Network">PHN</abbr></li>
                                             <li>Tennis, Singles</li>
@@ -789,6 +771,56 @@
                                             <li>Glider Pilot, <abbr title="York Soaring Association">YSA</abbr></li>
                                             <li class="hidden">120 km bike trip to Niagara, <abbr title="2007">2007</abbr></li>
                                             <li class="hidden">Ice Hockey, West Mall Lightning, <abbr title="">Youth</abbr>-<abbr title="2007">2007</abbr></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </section>
+                <div class="clear"></div>
+
+
+                <hr class="seperator">
+
+                <section class="coursework-wrapper screenonly" id="coursework">
+                    <div class="header">
+                        <h2>Extras</h2>
+                    </div>
+                    <div class="content-wrapper">
+                        <div class="content">
+                            <ol class="vcalendar">
+                                <li class="vevent vcard experience">
+                                    <a href="#arwid-bancewicz" class="include" title="Arwid Bancewicz"></a>
+                                    <h3 class="title">Coursework</h3>
+                                    <!-- <span class="org highlight"></span>  -->
+                                    <!-- <div class="dates"><abbr class="dtstart" title="2005-09-01">Sept 2005</abbr> - <abbr title="2010-11-01">Nov 2010</abbr></div>  -->
+                                    <!--<span class="location"></span>-->
+                                    <div class="summary">
+                                        <ul>
+                                            <li><strong>Final Design Project</strong>, <abbr title="2010">2010</abbr><br>Worked on enhancing an existing software; a distributed Publish/Subscribe middleware designed for large-scale event management applications. Replaced the existing message creation mechanism with JavaCC parsers to allow the software to accept industrial-standard communication protocols such as XML, JSON, and YAML.</li>
+                                            <li class="hidden"><strong>Web Project (TagIT), ECE450</strong>, <abbr title="2010">2010</abbr><br>Participated in a class-wide software project in developing a social networking service for Auto Service Centres. Researched jQuery, along with other JavaScript libraries, and prepared a presentation for the class.</li>
+                                            <li><strong>HTTP Server Design Project, ECE299</strong>, <abbr title="2007">2007</abbr><br>Lead a team of three to create an object-oriented HTTP web server in C++. Implemented multi-threading, server clustering, log files, graceful server shutdown, and various features for protocol processing such as virtual web hosting, automatic pathname expansion, and dynamic content handling.</li>
+                                            <li><strong>Digital Systems Project (3D Objects), ECE983/241</strong>, <abbr title="2006">2006</abbr><br>One of the top projects in the class of 290 and one of only two projects implementing 3D graphics. Created a 3D system in hardware (Verilog & Schematics) that displays a transformable 3D object.  Learned Verilog beyond scope of course and did personal research in 3D graphics theory. Implemented line drawing algorithms & trigonometric computation in hardware.</li>
+                                            <li><strong>Assembly Project, ECE243</strong>, <abbr title="2007">2007</abbr><br>Coded a memory game in 68k Assembly using a hex keypad user-interface, microphone and speakers.</li>
+                                            <li><strong>Communication Device, ECE298</strong>, <abbr title="2006">2006</abbr><br>Enabled communication between two devices by transmitting various laser beam frequencies.</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="vevent vcard education">
+                                    <a href="#arwid-bancewicz" class="include" title="Arwid Bancewicz"></a>
+                                    <h3 class="title">Awards</h3>
+                                    <!-- <span class="org highlight"></span>  -->
+                                    <!-- <div class="dates"><abbr class="dtstart" title="2005-09-01">Sept 2005</abbr> - <abbr title="2010-11-01">Nov 2010</abbr></div>  -->
+                                    <!--<span class="location"></span>-->
+                                    <div class="summary">
+                                        <ul>
+                                            <li><a href="http://www.undergrad.engineering.utoronto.ca/Programs/Minors_Certificates/Engineering_Minors_Certificates/certificates/entrepreneurship.htm" rel="external" target="_top">Entrepreneurship, Innovation, and Small Business Management Certificate</a>, University of Toronto, <abbr title="2008">2008</abbr></li>
+                                            <li>Top Digital Systems Project (3D Objects) <abbr title="2006">2006</abbr>, University of Toronto</li>
+                                            <li>Dean’s Honour List, University of Toronto, <abbr title="2005">2005</abbr>-<abbr title="2007">2007</abbr></li>
+                                            <li>Finalist in Bridge Design Runoff, University of Toronto, <abbr title="2005">2005</abbr></li>
+                                            <li>First place, <abbr title="Ontario Business Educators' Association">OBEA</abbr> Computer Programming Contest, <abbr title="2005">2005</abbr></li>
+                                            <li>Computer Science Award, Michael Power St. Joseph, <abbr title="2005">2005</abbr></li>
                                         </ul>
                                     </div>
                                 </li>
