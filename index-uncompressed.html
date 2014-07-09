@@ -5,15 +5,15 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
         <!--
-  	  This was initially a fork of Paul Irish's resume.
-  	    - arwid bancewicz. march 2011
+       This was initially a fork of Paul Irish's resume.
+         - arwid bancewicz. march 2011
                 __
                / _)     Welcome to the source!      
         .-^^^-/ /       This is a single-file resumé with no extra HTTP connections (beyond analytics).
      _/       /         The content is marked up with microformats: hResume, hCalendar, hCard, adr
     <__.|_|-|_|         I'm also using HTML5 semantic markup along with a few sprinkles of CSS3
-	                        -paul irish. february 2010.
-	--> 
+                             -paul irish. february 2010.
+     --> 
         <meta http-equiv="imagetoolbar" content="false">
         <meta http-equiv="X-UA-Compatible" content="IE=8;chrome=1">
         <meta name="MSSmartTagsPreventParsing" content="true">
@@ -58,8 +58,8 @@
           li{margin:3px 0;}
           /*blockquote:before,blockquote:after,q:before,q:after{content:"\"";}
                     blockquote,q{quotes:"" "";}*/
-		  blockquote:before,blockquote:after,q:before,q:after{content:"";}
-		  blockquote,q{quotes:"";}
+            blockquote:before,blockquote:after,q:before,q:after{content:"";}
+            blockquote,q{quotes:"";}
           q{color:#666;}
           blockquote{color:#bbb;font-style:normal;margin:1em 1em 1em 25px;padding-left:20px;-webkit-transition:color 1s ease-in;-moz-transition:color 1s ease-in;-o-transition:color 1s ease-in;transition:color 1s ease-in;background:url(images/apostrophe.png) no-repeat 5px 0;}
           @media screen{blockquote:hover{color:#333;}
@@ -209,13 +209,13 @@
           .wrapper-shadow{background:url(images/post_shadow.png) left bottom no-repeat;width:50%;height:10px;display:block;position:absolute;left:0;bottom:-10px;z-index:2;}
           .wrapper-shadow.r{left:auto;right:0;background-position:right bottom;}
           header{background:#111;background:-webkit-gradient(linear,left top,left bottom,from(#333),to(#111));background:-moz-linear-gradient(top,#333,#111);background:transparent 9;box-shadow:0 1px 2px rgba(0,0,0,0.5);-moz-box-shadow:0 1px 2px rgba(0,0,0,0.5);-webkit-box-shadow:0 1px 2px rgba(0,0,0,0.5);}
-		  .tweet { margin-top: 28px; }
-		  .tweet .author {  margin-right: 1em; margin-top:0.3em; display:block }
-		  .tweet .author a { border: none; color: #bbb; font-size: 100%; position:relative;-webkit-transition:color 1s ease-in;-moz-transition:color 1s ease-in;-o-transition:color 1s ease-in;transition:color 1s ease-in;}
-		  .tweet .author a:hover { color: #fff; }
-		  .tweet:hover .author a { background: none; color: #666; }
-		  .tweet .author a:before { content: '—' }
-/*		  .tweet .author a:after { content: url(http://twitter.com/favicon.ico); position: absolute; right:-18px; top:-2px;}*/
+            .tweet { margin-top: 28px; }
+            .tweet .author {  margin-right: 1em; margin-top:0.3em; display:block }
+            .tweet .author a { border: none; color: #bbb; font-size: 100%; position:relative;-webkit-transition:color 1s ease-in;-moz-transition:color 1s ease-in;-o-transition:color 1s ease-in;transition:color 1s ease-in;}
+            .tweet .author a:hover { color: #fff; }
+            .tweet:hover .author a { background: none; color: #666; }
+            .tweet .author a:before { content: '—' }
+/*          .tweet .author a:after { content: url(http://twitter.com/favicon.ico); position: absolute; right:-18px; top:-2px;}*/
           /*!printing */ 
           @media print{
           #nav-wrapper{display:none;}
@@ -225,7 +225,7 @@
           h1{padding-left:0;color:#000;padding:0;margin-top:34px;}
           body,a{color:#000;}
           div.summary-wrapper{border-bottom:1px solid #888;border-top:1px solid #888;}
-          #content div.summary {margin: 0.5em 0 0;}
+          #content div.summary {margin: 0.4em 0 0;}
           .intro-wrapper{display:none;}
           abbr[title]{border-bottom:none;}
           .title-wrapper h1{padding:0;display:inline-block !important;float:left;}
@@ -247,7 +247,7 @@
           footer{border-top:1px solid #888;padding-top:.5em;margin-top:.5em;}
           abbr,a{border:none;}
           .wrapper-shadow{display:none}
-		  .tweet{display:none}
+            .tweet{display:none}
           .noprint{display:none !important;}
           @page :first{margin:.5in;margin-bottom:.25in;}
           }
@@ -421,7 +421,7 @@
                 <div class="clear"></div>
                 -->
                 <section class="experience-wrapper" id="experience">
-	
+     
                     <div class="header">
                         <h2>Experience</h2>
                     </div>
@@ -429,12 +429,27 @@
                     <div class="content-wrapper">
                         <div class="content">
                             <ol class="vcalendar">
-                                <li class="subheader" id="company"><h3>Startup</h3>
+                                <li class="subheader" id="company"><h3 class="hidden">Startup</h3>
                                    <div class="tweet">
                                         <blockquote>Don't ask people what they do, ask what they're building.
                                         <span class="author"><a href="http://twitter.com/jonathanfields">Jonathan Fields</a></span></blockquote>
                                    </div>
                               </li>
+                                <li class="vevent vcard experience">
+                                    <a href="#arwid-bancewicz" class="include" title="Arwid Bancewicz"></a>
+                                    <h3 class="title">Web Application Engineer<i>Contract</i></h3>
+                                    <a class="org highlight" href="http://amazon.com"><img src="http://www.amazon.com/favicon.ico">Amazon<span>.com</span></a>
+                                    <span class="tagline">Local Commerce, Seattle, WA</span>
+                                    <div class="dates"><abbr class="dtstart" title="2014-04-01">Apr 2014</abbr> - <abbr title="2014-07-09">present</abbr><div class="desc">3+ months</div></div>
+                                    <!-- <div style="background:url(images/camilion.png); width:100px; height:31px;position:absolute;left:-150px;top:80px;"></div> -->
+                                    <!-- <span class="location">Richmond Hill, Ontario</span>  -->
+                                    <div class="summary">
+                                        <ul>
+                                            <li>Near launch phase of a new product in local commerce.</li>
+                                            <li>Tech Stack: BackboneJS/Handlebars/SCSS/Java/Objective-C
+                                        </ul>
+                                    </div>
+                                </li>
                                 <li class="vevent vcard experience">
                                     <a href="#arwid-bancewicz" class="include" title="Arwid Bancewicz"></a>
                                     <h3 class="title">Co-Founder</h3>
@@ -464,7 +479,7 @@
                                         <!--<p>A product umbrella and development shop for web apps.</p>--> 
                                         <ul>
                                              <li>A product umbrella and development shop for web apps, inspired by ZURB and MILK, a startup incubator.</li>
-                                             <li>Incubated <a href="http://digits.me">Digits.me</a>, <a href="http://myquadoo.com" rel="external" target="_top">MyQuadoo.com</a>, <a href="http://passbox.herokuapp.com" rel="external" target="_top">PassBox for DropBox</a>, <a href="http://behindthediamond.com" rel="external" target="_top">BehindTheDiamond.com</a> and some dev for several startups.</li>
+                                             <li class="screenonly">Incubated <a href="http://digits.me">Digits.me</a>, <a href="http://myquadoo.com" rel="external" target="_top">MyQuadoo.com</a>, <a href="http://passbox.herokuapp.com" rel="external" target="_top">PassBox for DropBox</a>, <a href="http://behindthediamond.com" rel="external" target="_top">BehindTheDiamond.com</a> and some dev for several startups.</li>
                                              <li>Tech Stack: CoffeeScript/BackboneJS/ROR3/PHP/NodeJS/SequelizeJS/Socket.IO/MongoDB/Heroku/GIT</li>
                                              <li class="hidden">Most apps built with BackboneJS/Zepto/Rails/Haml/Sass, such as <a href="http://myquadoo.com" rel="external" target="_top">MyQuadoo<span>.com</span></a> and <a href="//passbox.herokuapp.com" rel="external" target="_top">Passbox</a>.</li>
                                              <li class="hidden">Built a mobile UX framework on top BackboneJS.</li>
@@ -478,6 +493,22 @@
                                             <li><a href="//myquadoo.herokuapp.com" rel="external" target="_top">myQuadoo</a>, - A 4-quadrant todo list to help prioritize tasks.</li>
                                             <li><a href="//passbox.herokuapp.com" rel="external" target="_top">PassBox</a>, - Securely store your passwords on DropBox.</li>
                                         </ul>-->
+                                    </div>
+                                </li>
+                                <li class="vevent vcard experience">
+                                    <a href="#arwid-bancewicz" class="include" title="Arwid Bancewicz"></a>
+                                    <h3 class="title">Lead Web App Developer<i>Contract, Project-basis</i></h3>
+                                    <a class="org highlight" href="http://eventmobi.com"><img src="http://www.eventmobi.com/_images/favicon.ico">EventMobi<span>.com</span></a>
+                                    <span class="tagline">Mobile Apps for Events, ~28 Employee Startup, Toronto, ON</span>
+                                    <div class="dates"><abbr class="dtstart" title="2008-05-01">Dec 2011</abbr> - <abbr title="2009-08-01">Apr 2012</abbr><div class="desc">4 months</div></div>
+                                    <!-- <div style="background:url(images/camilion.png); width:100px; height:31px;position:absolute;left:-150px;top:80px;"></div> -->
+                                    <!-- <span class="location">Richmond Hill, Ontario</span>  -->
+                                    <div class="summary">
+                                        <ul>
+                                            <li>Built their flagship HTML5 app, #1 Event App, serving 3+ Million attendees in 25 countries.</li>
+                                            <li class="screenonly">Tech Stack: CoffeeScript/BackboneJS/HBS/Ruby/PHP
+                                            <li class="hidden">App was built with BackboneJS and functions both online and offline.</li>
+                                        </ul>
                                     </div>
                                 </li>
                                 <li class="vevent vcard experience">
@@ -497,23 +528,7 @@
                                         </ul>
                                     </div>
                                 </li>
-                                <li class="subheader" id="company"><h3>Employment</h3></li>
-                                <li class="vevent vcard experience">
-                                    <a href="#arwid-bancewicz" class="include" title="Arwid Bancewicz"></a>
-                                    <h3 class="title">Lead Web App Developer<i>Contract, Project-basis</i></h3>
-                                    <a class="org highlight" href="http://eventmobi.com"><img src="http://www.eventmobi.com/_images/favicon.ico">EventMobi<span>.com</span></a>
-                                    <span class="tagline">Mobile Apps for Events, ~28 Employee Startup, Toronto, ON</span>
-                                    <div class="dates"><abbr class="dtstart" title="2008-05-01">Dec 2011</abbr> - <abbr title="2009-08-01">Apr 2012</abbr><div class="desc">4 months</div></div>
-                                    <!-- <div style="background:url(images/camilion.png); width:100px; height:31px;position:absolute;left:-150px;top:80px;"></div> -->
-                                    <!-- <span class="location">Richmond Hill, Ontario</span>  -->
-                                    <div class="summary">
-                                        <ul>
-                                            <li>Built their flagship HTML5 app, #1 Event App, serving 3+ Million attendees in 25 countries.</li>
-                                            <li>Tech Stack: CoffeeScript/BackboneJS/HBS/Ruby/PHP
-                                            <li class="hidden">App was built with BackboneJS and functions both online and offline.</li>
-                                        </ul>
-                                    </div>
-                                </li>
+                                <li class="subheader" id="company"><h3 class="hidden">Employment</h3></li>
                                 <li class="vevent vcard experience">
                                     <a href="#arwid-bancewicz" class="include" title="Arwid Bancewicz"></a>
                                     <h3 class="title">Lead Software Developer<i>Contract, Month-to-month</i></h3>
