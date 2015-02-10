@@ -83,6 +83,7 @@
           @media screen{
                a:hover{color:#111;background-color:#fff;}
                .screenonly{display:block;}
+               li.screenonly{display:list-item;}
           }
           .content a,.summary a{color:#555;background-color:#fff;padding:0 2px;-webkit-transition:color .25s ease-in;-moz-transition:color .25s ease-in;-o-transition:color .25s ease-in;transition:color .25s ease-in;border-bottom:1px dashed #2D5795;}
           .content a:empty{padding:0;}
@@ -392,7 +393,7 @@
                                 <li class="vevent vcard education">
                                     <a href="#arwid-bancewicz" class="include" title="Arwid Bancewicz"></a>
                                     <h3 class="title"><abbr title="Bachelor of Applied Science">BASc</abbr>, Computer Engineering</h3>
-                                    <a class="org highlight" href="http://www.utoronto.com"><img src="http://www.utoronto.com/__shared/templates/images/U-of-T-favicon.png">University of Toronto</a>
+                                    <a class="org highlight" href="http://www.utoronto.com"><img src="http://www.utoronto.ca/sites/default/files/U-of-T-favicon.png">University of Toronto</a>
                                     <div class="dates"><abbr class="dtstart" title="2005-09-01">Sept 2005</abbr> - <abbr title="2010-11-01">Nov 2010</abbr><div class="desc">4 years (worked 1 year)</div></div>
                                     <!-- <div style="background:url(images/uoft.gif); width:40px; height:91px;position:absolute;left:-120px;top:30px;"></div> -->
                                     <!--<span class="location">Toronto, Ontario</span>-->
@@ -437,16 +438,27 @@
                               </li>
                                 <li class="vevent vcard experience">
                                     <a href="#arwid-bancewicz" class="include" title="Arwid Bancewicz"></a>
-                                    <h3 class="title">Web Application Engineer<i>Contract</i></h3>
+                                    <h3 class="title">Software Engineer<i>Contract</i></h3>
                                     <a class="org highlight" href="http://amazon.com"><img src="http://www.amazon.com/favicon.ico">Amazon<span>.com</span></a>
-                                    <span class="tagline">Local Commerce, Seattle, WA</span>
-                                    <div class="dates"><abbr class="dtstart" title="2014-04-01">Apr 2014</abbr> - <abbr title="2014-07-09">present</abbr><div class="desc">3+ months</div></div>
-                                    <!-- <div style="background:url(images/camilion.png); width:100px; height:31px;position:absolute;left:-150px;top:80px;"></div> -->
-                                    <!-- <span class="location">Richmond Hill, Ontario</span>  -->
+                                    <span class="tagline">Subscribe And Save, Seattle, WA</span>
+                                    <div class="dates"><abbr class="dtstart" title="2014-08-01">Aug 2014</abbr> - <abbr title="present">present</abbr><div class="desc">7+ months</div></div>
                                     <div class="summary">
                                         <ul>
-                                            <li>Near launch phase of a new product in local commerce.</li>
-                                            <li>Tech Stack: BackboneJS/Handlebars/SCSS/Java/Objective-C
+                                          <li>Helped launch a revamped Subscribe And Save experience, plus international tablet expansion.</li>
+                                          <li class="screenonly">Tech Stack: Java/JSP/Mason/Perl</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="vevent vcard experience">
+                                    <a href="#arwid-bancewicz" class="include" title="Arwid Bancewicz"></a>
+                                    <h3 class="title">Web Application Engineer<i>Contract</i></h3>
+                                    <a class="org highlight" href="http://amazon.com"><img src="http://www.amazon.com/favicon.ico">Amazon<span>.com</span></a>
+                                    <span class="tagline">Local Register, Seattle, WA</span>
+                                    <div class="dates"><abbr class="dtstart" title="2014-04-01">Apr 2014</abbr> - <abbr title="2014-07-31">Jul 2014</abbr><div class="desc">4 months</div></div>
+                                    <div class="summary">
+                                        <ul>
+                                            <li>Helped launch an product for merchants to accept credit card payments on their mobile device.</li>
+                                            <li class="screenonly">Tech Stack: BackboneJS/Handlebars/SCSS/Java/Objective-C
                                         </ul>
                                     </div>
                                 </li>
@@ -460,9 +472,9 @@
                                     <!-- <span class="location">Richmond Hill, Ontario</span>  -->
                                     <div class="summary">
                                         <ul>
-                                            <li>Finalists in the MassChallenge startup accelerator in Boston and part of Microsoft BizSpark One.</li>
+                                            <li>Finalists in the MassChallenge startup accelerator in Boston and selected into Microsoft BizSpark One.</li>
                                             <li>Responsibilities: Team, Vision, Product, Strategy, Front-end Dev, Design, PR</li>
-                                            <li>Tech Stack: CoffeeScript/BackboneJS/Zepto/HBS/Haml/SaSS/CSS3/ROR3/Azure/C#.Net/PostgreSQL/GIT</li>
+                                            <li class="screenonly">Tech Stack: CoffeeScript/BackboneJS/Zepto/HBS/Haml/SaSS/CSS3/ROR3/Azure/C#.Net/PostgreSQL/GIT</li>
                                             <li class="hidden">A touch-based clothing discovery app built with BackboneJS/Rails/C#/.net; served in FB and as an ecommerce site widget.</li>
                                         </ul>
                                     </div>
@@ -472,15 +484,16 @@
                                     <h3 class="title">Founder</h3>
                                     <a class="org highlight" href="http://laborific.com"><img src="http://laborific.com/favicon.ico">Laborific<span>.com</span></a>
                                     <span class="tagline">Development Shop & Idea Incubator, Toronto, ON</span>
-                                    <div class="dates"><abbr class="dtstart" title="2011-05-01">May '12</abbr> - <abbr class="dtstart" title="2012-08-01">Aug '12</abbr>, <abbr class="dtstart" title="2013-06-01">Jun '13</abbr> - <abbr title="2014-02-01">Present</abbr><div class="desc">1 year</div></div>
+                                    <div class="dates"><abbr class="dtstart" title="2011-05-01">May '12</abbr> - <abbr class="dtstart" title="2012-08-01">Aug '12</abbr>, <abbr class="dtstart" title="2013-06-01">Jun '13</abbr> - <abbr title="2014-03-01">Mar '14</abbr><div class="desc">1 year</div></div>
                                     <!-- <div style="background:url(images/camilion.png); width:100px; height:31px;position:absolute;left:-150px;top:80px;"></div> -->
                                     <!-- <span class="location">Richmond Hill, Ontario</span>  -->
                                     <div class="summary">
                                         <!--<p>A product umbrella and development shop for web apps.</p>--> 
                                         <ul>
-                                             <li>A product umbrella and development shop for web apps, inspired by ZURB and MILK, a startup incubator.</li>
-                                             <li class="screenonly">Incubated <a href="http://digits.me">Digits.me</a>, <a href="http://myquadoo.com" rel="external" target="_top">MyQuadoo.com</a>, <a href="http://passbox.herokuapp.com" rel="external" target="_top">PassBox for DropBox</a>, <a href="http://behindthediamond.com" rel="external" target="_top">BehindTheDiamond.com</a> and some dev for several startups.</li>
-                                             <li>Tech Stack: CoffeeScript/BackboneJS/ROR3/PHP/NodeJS/SequelizeJS/Socket.IO/MongoDB/Heroku/GIT</li>
+                                             <li>Accepted into a Toronto startup accelerator for GamifySports: second screen experiences for live sports.</li>
+                                             <li class="screenonly">It's a product umbrella and development shop for web apps, inspired by ZURB and MILK, a startup incubator.</li>
+                                             <li>Built <a href="http://digits.me">Digits.me</a>, <a href="http://myquadoo.com" rel="external" target="_top">MyQuadoo.com</a>, <a href="http://passbox.herokuapp.com" rel="external" target="_top">PassBox for DropBox</a>, <a href="http://behindthediamond.com" rel="external" target="_top">BehindTheDiamond.com</a>.</li>
+                                             <li class="screenonly">Tech Stack: CoffeeScript/BackboneJS/ROR3/PHP/NodeJS/SequelizeJS/Socket.IO/MongoDB/Heroku/GIT</li>
                                              <li class="hidden">Most apps built with BackboneJS/Zepto/Rails/Haml/Sass, such as <a href="http://myquadoo.com" rel="external" target="_top">MyQuadoo<span>.com</span></a> and <a href="//passbox.herokuapp.com" rel="external" target="_top">Passbox</a>.</li>
                                              <li class="hidden">Built a mobile UX framework on top BackboneJS.</li>
                                         </ul>
@@ -505,7 +518,7 @@
                                     <!-- <span class="location">Richmond Hill, Ontario</span>  -->
                                     <div class="summary">
                                         <ul>
-                                            <li>Built their flagship HTML5 app, #1 Event App, serving 3+ Million attendees in 25 countries.</li>
+                                            <li>Built their flagship HTML5 app, at the time the #1 Event App, serving 3+ Million attendees in 25 countries.</li>
                                             <li class="screenonly">Tech Stack: CoffeeScript/BackboneJS/HBS/Ruby/PHP
                                             <li class="hidden">App was built with BackboneJS and functions both online and offline.</li>
                                         </ul>
@@ -521,8 +534,8 @@
                                     <!-- <span class="location">Richmond Hill, Ontario</span>  -->
                                     <div class="summary">
                                         <ul>
-                                            <li>A Platform as a Service (PaaS) to provide both hosting and data services for HTML5 Mobile Apps.</li>
-                                            <li>Tech Stack: NodeJS/Jade/CouchDB/Cloud9IDE-Integration</li>
+                                            <li>Making mobile HTML5 app development easy  with a PaaS to provide both hosting and data services.</li>
+                                            <li class="screenonly">Tech Stack: NodeJS/Jade/CouchDB/Cloud9IDE-Integration</li>
                                             <li class="hidden">The goal was to make mobile web app development easy enough for designers to do.</li>
                                             <li class="hidden">App built with NodeJS, CouchDB, and integrated with Cloud9 IDE.</li>
                                         </ul>
@@ -558,7 +571,7 @@
                                             <li>Architected a new UI for an existing product in Ext JS/J2EE/Spring and supported teams as the Ext Expert.</li>
                                             <!--<li>Became known among colleagues and managers as the <q>EXT JS expert</q> and was the go-to guy for related issues.</li>
                                             <li>Worked in Agile software development (SCRUM) with latest software technologies (J2EE, Spring, Ext JS).</li>-->
-                                            <li>Experienced the life cycles of two product releases (including formal QA); and a new product prototype.</li>
+                                            <li class="screenonly">Experienced the life cycles of two product releases (including formal QA); and a new product prototype.</li>
                                         </ul>
                                     </div>
                                 </li>
@@ -614,8 +627,9 @@
                                     <!-- <span class="location">Ontario</span> -->
                                     <div class="summary">
                                         <ul>
-                                             <li>Chess game in Java. Available at <a href="http://sourceforge.net/projects/aichess" rel="external" target="_top">sourceforge.net/projects/aichess</a>, <a href="http://github.com/Arwid/chess" rel="external" target="_top">github.com/Arwid/chess</a>, and at<a href="http://mac.softpedia.com/get/Games/Arvydas-Chess.shtml" rel="external" target="_top">softpedia.com</a></li>
-                                             <li>95 source files, 15,000+ lines of code. Learned principals behind AI, optimizing AIs, threading, and LAN communication.</li>
+                                             <li>Java Chess game in last year of high school. Learned and applied principals behind AI, optimizing AIs, threading, and LAN communication.</li>
+
+                                             <li class="screenonly">Available at <a href="http://sourceforge.net/projects/aichess" rel="external" target="_top">sourceforge.net/projects/aichess</a>, <a href="http://github.com/Arwid/chess" rel="external" target="_top">github.com/Arwid/chess</a>, and at<a href="http://mac.softpedia.com/get/Games/Arvydas-Chess.shtml" rel="external" target="_top">softpedia.com</a>. 95 source files, 15,000+ lines of code. </li>
                                         </ul>
                                         <p class="hidden"></p>
                                         <ul class="hidden">
@@ -632,13 +646,13 @@
                                     <h3 class="title">Community Involvement</h3>
                                     <span>Open Source at <a href="http://github.com/arwid">github.com/arwid</a></span>
                                     <!--<span class="org highlight">/span> -->
-                                    <div class="dates"><abbr class="dtstart" title="2006-10-01">Oct 2006</abbr> - <abbr title="2014-02-10">Present</abbr><div class="desc">6+ years</div></div>
+                                    <div class="dates"><abbr class="dtstart" title="2006-10-01">Oct 2006</abbr> - <abbr title="2014-02-10">Present</abbr></div>
                                     <!--<span class="location"></span>-->
                                     <div class="summary printonly">
                                         <ul>
-                                             <li>Created <a href="http://github.com/Arwid/jQuery.scrollIntoView" rel="external" target="_top">jQuery.scrollIntoView</a>, <a href="http://github.com/Arwid/JSON_Minifier" rel="external" target="_top">JSON_Minifier</a>, <a href="http://github.com/Arwid/jQuery.Page" rel="external" target="_top">jQuery.Page</a>, <a href="http://github.com/Arwid/jQuery.ui.animSortable" rel="external" target="_top">jQuery.ui.animSortable</a>, <a href="http://github.com/Arwid/haml_sprockets_engine" rel="external" target="_top">Haml Sprockets Engine</a>.</li>
-                                             <li>Founding member of <abbr title="Educate, Promote, Inspire, Connect">EPIC</abbr> student conference, <a href="http://cutc.ca" rel="external" target="_top"><abbr title="Canadian Undergraduate Technology Conference">CUTC</a> Ambassador, <a href="http://peoconference.skule.ca" rel="external" target="_top"><abbr title="Professional Engineers of Ontario">PEO</a> Webmaster, Presented <a href="http://slideshare.net/arwid/jquery-4470993" rel="external" target="_top">jQuery Introduction</a>.</li>
-                                             <li>Regularly attend tech events and conferences, and partipated in 4 startup weekend hackathons.</li>
+                                             <li>Notables Contributions: <a href="http://github.com/Arwid/jQuery.scrollIntoView" rel="external" target="_top">jQuery.scrollIntoView</a>, <a href="http://github.com/Arwid/JSON_Minifier" rel="external" target="_top">JSON_Minifier</a>, <a href="http://github.com/Arwid/jQuery.Page" rel="external" target="_top">jQuery.Page</a>, <a href="http://github.com/Arwid/jQuery.ui.animSortable" rel="external" target="_top">jQuery.ui.animSortable</a>.</li>
+                                             <li>Founding member of <abbr title="Educate, Promote, Inspire, Connect">EPIC</abbr> student conference, <a href="http://cutc.ca" rel="external" target="_top"><abbr title="Canadian Undergraduate Technology Conference">CUTC</a> Ambassador, <a href="http://peoconference.skule.ca" rel="external" target="_top"><abbr title="Professional Engineers of Ontario">PEO</a> Webmaster.</li>
+                                             <li>Regularly attend tech events and conferences, and partipated in 6+ startup weekend hackathons.</li>
                                         </ul>
                                     </div>
                                     <div class="summary hidden">
